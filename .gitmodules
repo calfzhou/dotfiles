@@ -1,0 +1,3 @@
+[submodule "bundle/drake"]
+	path = bundle/drake
+	url = https://bitbucket.org/larsyencken/vim-drake-syntax.git
