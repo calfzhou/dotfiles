@@ -13,3 +13,6 @@
 [submodule "bundle/pig"]
 	path = bundle/pig
 	url = https://github.com/motus/pig.vim
+[submodule "bundle/logfile"]
+	path = bundle/logfile
+	url = https://github.com/Jintian/vim-logfile
