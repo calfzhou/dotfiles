@@ -2,3 +2,7 @@
 
 " Runtime Path Manipulation https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
+
+" Enable overriding settings of vim-sensible
+runtime! plugin/sensible.vim
+" Put overrides here
