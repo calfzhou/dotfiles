@@ -1,3 +1,6 @@
 [submodule "bundle/drake"]
 	path = bundle/drake
 	url = https://bitbucket.org/larsyencken/vim-drake-syntax.git
+[submodule "bundle/clojure-static"]
+	path = bundle/clojure-static
+	url = https://github.com/guns/vim-clojure-static
