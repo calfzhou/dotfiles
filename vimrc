@@ -45,3 +45,6 @@ set tags=tags;
 
 " Set autochdir
 nmap <F9> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+set background=dark
+colorscheme solarized
