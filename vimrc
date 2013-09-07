@@ -48,3 +48,6 @@ nmap <F9> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 set background=dark
 colorscheme solarized
+
+" auto locate to last editing position
+autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal g'\"" | endif
