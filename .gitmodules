@@ -16,3 +16,6 @@
 [submodule "bundle/logfile"]
 	path = bundle/logfile
 	url = https://github.com/Jintian/vim-logfile
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/hallison/vim-markdown.git
