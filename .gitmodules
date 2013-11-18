@@ -1,0 +1,21 @@
+[submodule "bundle/drake"]
+	path = vim/bundle/drake
+	url = https://bitbucket.org/larsyencken/vim-drake-syntax.git
+[submodule "bundle/clojure-static"]
+	path = vim/bundle/clojure-static
+	url = https://github.com/guns/vim-clojure-static
+[submodule "bundle/sensible"]
+	path = vim/bundle/sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "bundle/solarized"]
+	path = vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/pig"]
+	path = vim/bundle/pig
+	url = https://github.com/motus/pig.vim
+[submodule "bundle/logfile"]
+	path = vim/bundle/logfile
+	url = https://github.com/Jintian/vim-logfile
+[submodule "bundle/markdown"]
+	path = vim/bundle/markdown
+	url = https://github.com/hallison/vim-markdown.git
