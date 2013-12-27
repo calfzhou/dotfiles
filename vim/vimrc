@@ -47,6 +47,8 @@ set tags=tags;
 nmap <F9> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 set background=dark
+" solarized options
+let g:solarized_termtrans = 1
 colorscheme solarized
 
 " auto locate to last editing position
