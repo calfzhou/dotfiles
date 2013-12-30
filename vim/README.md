@@ -16,8 +16,8 @@ ln -s .vim/vimrc .vimrc
 
 ```batch
 cd %VIM_PROGRAM_PATH%
-junction vimfiles %DOTFILES_HOME%\vim
-ln vimfiles\vimrc _vimrc
+mklink /d vimfiles %DOTFILES_HOME%\vim
+mklink _vimrc vimfiles\vimrc
 ```
 
 Information

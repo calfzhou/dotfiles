@@ -14,8 +14,8 @@ cd ~
 ### Windows ###
 
 ```batch
-cd "C:\Users\<YourName>\AppData\Roaming\Sublime Text 2\Packages\User"
-ln %DOTFILES_HOME%\sunlime-text-2\Preferences.sublime-settings Preferences.sublime-settings
+cd "C:\Users\{YourName}\AppData\Roaming\Sublime Text 2\Packages\User"
+mklink Preferences.sublime-settings %DOTFILES_HOME%\sublime-text-2\Preferences.sublime-settings
 ```
 
 Information
