@@ -7,8 +7,8 @@ Usage
 ### Mac and Linux ###
 
 ```shell
-cd ~
-# TBD
+cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/
+ln -s $DOTFILES_HOME/sublime-text-2/Preferences.sublime-settings ./
 ```
 
 ### Windows ###
