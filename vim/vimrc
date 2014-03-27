@@ -19,6 +19,8 @@ set expandtab
 
 set textwidth=0
 
+set hlsearch
+
 " Make the 'case' in the same column with 'switch'
 set cinoptions=:N
 
