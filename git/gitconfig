@@ -1,0 +1,15 @@
+[user]
+	name = zhouji
+	email = calf.zhou@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	autocrlf = false
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+[push]
+	default = current
