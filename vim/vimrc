@@ -1,3 +1,6 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 " Refer: http://blog.sensible.io/2012/10/18/pathogenize-your-vim.html
 
 " Runtime Path Manipulation https://github.com/tpope/vim-pathogen
@@ -55,3 +58,7 @@ colorscheme solarized
 
 " auto locate to last editing position
 autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal g'\"" | endif
+
+" show control characters
+set list
+set listchars=tab:»·,nbsp:·,trail:·
