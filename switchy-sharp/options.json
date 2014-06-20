@@ -1,0 +1,186 @@
+{
+    "config": {
+        "autoPacScriptPath": ":memory:",
+        "confirmDeletion": true,
+        "firstTime": ":]",
+        "lastListUpdate": "Mon Apr 14 2014 09:29:42 GMT+0800 (CST)",
+        "monitorProxyChanges": true,
+        "pacScriptData": "",
+        "preventProxyChanges": false,
+        "proxyConfigUrl": ":memory:",
+        "proxyMode": "auto",
+        "proxyServer": "",
+        "quickRulePatternType": "wildcard",
+        "quickRuleProfileId": "Goagent",
+        "quickSwitch": false,
+        "refreshTab": false,
+        "ruleListAutoProxy": true,
+        "ruleListEnabled": true,
+        "ruleListProfileId": "Goagent",
+        "ruleListReload": "720",
+        "ruleListUrl": "http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt",
+        "rulesFirstTime": ";]",
+        "startupProfileId": "",
+        "switchRules": true
+    },
+    "defaultRule": {
+        "id": "defaultRule",
+        "name": "Default Rule",
+        "patternType": "wildcard",
+        "profileId": "direct",
+        "urlPattern": ""
+    },
+    "profiles": {
+        "Fiddler": {
+            "color": "yellow",
+            "id": "Fiddler",
+            "name": "Fiddler",
+            "proxyConfigUrl": "",
+            "proxyExceptions": "localhost; 127.0.0.1; <local>",
+            "proxyFtp": "",
+            "proxyHttp": "127.0.0.1:8888",
+            "proxyHttps": "",
+            "proxyMode": "manual",
+            "proxySocks": "",
+            "socksVersion": 4,
+            "useSameProxy": true
+        },
+        "GoCalf": {
+            "color": "purple",
+            "id": "GoCalf",
+            "name": "Weiboyi",
+            "proxyConfigUrl": "",
+            "proxyExceptions": "localhost; 127.0.0.1;",
+            "proxyFtp": "",
+            "proxyHttp": "",
+            "proxyHttps": "",
+            "proxyMode": "manual",
+            "proxySocks": "127.0.0.1:7070",
+            "socksVersion": 5,
+            "useSameProxy": false
+        },
+        "Goagent": {
+            "color": "green",
+            "id": "Goagent",
+            "name": "Goagent",
+            "proxyConfigUrl": "",
+            "proxyExceptions": "localhost; 127.0.0.1; <local>",
+            "proxyFtp": "",
+            "proxyHttp": "127.0.0.1:8087",
+            "proxyHttps": "",
+            "proxyMode": "manual",
+            "proxySocks": "",
+            "socksVersion": 4,
+            "useSameProxy": true
+        },
+        "GoagentPac": {
+            "color": "green",
+            "id": "GoagentPac",
+            "name": "GoagentPac",
+            "proxyConfigUrl": "http://127.0.0.1:8086/proxy.pac",
+            "proxyExceptions": "localhost; 127.0.0.1; <local>",
+            "proxyFtp": "",
+            "proxyHttp": "",
+            "proxyHttps": "",
+            "proxyMode": "auto",
+            "proxySocks": "",
+            "socksVersion": 4,
+            "useSameProxy": true
+        },
+        "VM-Fiddler": {
+            "color": "blue",
+            "id": "VM-Fiddler",
+            "name": "VM-Fiddler",
+            "proxyConfigUrl": "",
+            "proxyExceptions": "localhost; 127.0.0.1; <local>",
+            "proxyFtp": "",
+            "proxyHttp": "10.211.55.15:8888",
+            "proxyHttps": "",
+            "proxyMode": "manual",
+            "proxySocks": "",
+            "socksVersion": 4,
+            "useSameProxy": true
+        },
+        "VM-Goagent": {
+            "color": "red",
+            "id": "VM-Goagent",
+            "name": "VM-Goagent",
+            "proxyConfigUrl": "",
+            "proxyExceptions": "localhost; 127.0.0.1; <local>",
+            "proxyFtp": "",
+            "proxyHttp": "10.211.55.15:8087",
+            "proxyHttps": "",
+            "proxyMode": "manual",
+            "proxySocks": "",
+            "socksVersion": 4,
+            "useSameProxy": true
+        }
+    },
+    "quickSwitchProfiles": [],
+    "rules": {
+        "Google Code": {
+            "id": "Google Code",
+            "name": "Google Code",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://*.googlecode.com/*"
+        },
+        "Quick Rule ": {
+            "id": "Quick Rule ",
+            "name": "Google All",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://*.google.com/*"
+        },
+        "Quick Rule 4": {
+            "id": "Quick Rule 4",
+            "name": "Router",
+            "patternType": "wildcard",
+            "profileId": "direct",
+            "urlPattern": "*://192.168.1.1/*"
+        },
+        "Quick Rule 5": {
+            "id": "Quick Rule 5",
+            "name": "evasi0n",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://evasi0n.com/*"
+        },
+        "Songshuhui": {
+            "id": "Songshuhui",
+            "name": "Songshuhui",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "http://cdn.songshuhui.net/*"
+        },
+        "SourceForge": {
+            "id": "SourceForge",
+            "name": "SourceForge",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://*.sourceforge.net/*"
+        },
+        "Weiboyi": {
+            "id": "Weiboyi",
+            "name": "Weiboyi",
+            "patternType": "wildcard",
+            "profileId": "direct",
+            "urlPattern": "http://192.168.1*.*"
+        },
+        "forDropBox": {
+            "id": "forDropBox",
+            "name": "forDropBox",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://*.cloudfront.net/*"
+        }
+    },
+    "selectedProfile": {
+        "color": "auto-blue",
+        "id": "auto",
+        "isAutomaticModeProfile": true,
+        "name": "[Auto Switch]",
+        "proxyConfigUrl": ":memory:",
+        "proxyMode": "auto"
+    }
+}
