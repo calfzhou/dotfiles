@@ -3,7 +3,7 @@
         "autoPacScriptPath": ":memory:",
         "confirmDeletion": true,
         "firstTime": ":]",
-        "lastListUpdate": "Mon Apr 14 2014 09:29:42 GMT+0800 (CST)",
+        "lastListUpdate": "Mon Jun 23 2014 12:08:37 GMT+0800 (CST)",
         "monitorProxyChanges": true,
         "pacScriptData": "",
         "preventProxyChanges": false,
@@ -50,7 +50,7 @@
             "id": "GoCalf",
             "name": "Weiboyi",
             "proxyConfigUrl": "",
-            "proxyExceptions": "localhost; 127.0.0.1;",
+            "proxyExceptions": "localhost; 127.0.0.1; <local>",
             "proxyFtp": "",
             "proxyHttp": "",
             "proxyHttps": "",
@@ -87,20 +87,6 @@
             "socksVersion": 4,
             "useSameProxy": true
         },
-        "VM-Fiddler": {
-            "color": "blue",
-            "id": "VM-Fiddler",
-            "name": "VM-Fiddler",
-            "proxyConfigUrl": "",
-            "proxyExceptions": "localhost; 127.0.0.1; <local>",
-            "proxyFtp": "",
-            "proxyHttp": "10.211.55.15:8888",
-            "proxyHttps": "",
-            "proxyMode": "manual",
-            "proxySocks": "",
-            "socksVersion": 4,
-            "useSameProxy": true
-        },
         "VM-Goagent": {
             "color": "red",
             "id": "VM-Goagent",
@@ -124,6 +110,13 @@
             "patternType": "wildcard",
             "profileId": "Goagent",
             "urlPattern": "*://*.googlecode.com/*"
+        },
+        "Google Fonts": {
+            "id": "Google Fonts",
+            "name": "Google Fonts",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://fonts.googleapis.com/*"
         },
         "Quick Rule ": {
             "id": "Quick Rule ",
