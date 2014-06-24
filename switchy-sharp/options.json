@@ -113,10 +113,10 @@
         },
         "Google Fonts": {
             "id": "Google Fonts",
-            "name": "Google Fonts",
+            "name": "Google API",
             "patternType": "wildcard",
             "profileId": "Goagent",
-            "urlPattern": "*://fonts.googleapis.com/*"
+            "urlPattern": "*://*.googleapis.com/*"
         },
         "Quick Rule ": {
             "id": "Quick Rule ",
