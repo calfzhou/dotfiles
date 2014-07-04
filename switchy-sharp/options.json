@@ -3,7 +3,7 @@
         "autoPacScriptPath": ":memory:",
         "confirmDeletion": true,
         "firstTime": ":]",
-        "lastListUpdate": "Mon Jun 23 2014 12:08:37 GMT+0800 (CST)",
+        "lastListUpdate": "Fri Jul 04 2014 09:12:46 GMT+0800 (CST)",
         "monitorProxyChanges": true,
         "pacScriptData": "",
         "preventProxyChanges": false,
@@ -104,6 +104,27 @@
     },
     "quickSwitchProfiles": [],
     "rules": {
+        "Cloud Flare": {
+            "id": "Cloud Flare",
+            "name": "Cloud Flare",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://cdnjs.cloudflare.com/*"
+        },
+        "Dropbox": {
+            "id": "Dropbox",
+            "name": "Dropbox Main",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://*.dropbox.com/*"
+        },
+        "Google Analytics": {
+            "id": "Google Analytics",
+            "name": "Google Analytics",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://*.google-analytics.com/*"
+        },
         "Google Code": {
             "id": "Google Code",
             "name": "Google Code",
@@ -120,7 +141,7 @@
         },
         "Quick Rule ": {
             "id": "Quick Rule ",
-            "name": "Google All",
+            "name": "Google Main",
             "patternType": "wildcard",
             "profileId": "Goagent",
             "urlPattern": "*://*.google.com/*"
@@ -162,7 +183,7 @@
         },
         "forDropBox": {
             "id": "forDropBox",
-            "name": "forDropBox",
+            "name": "DropBox Cloud",
             "patternType": "wildcard",
             "profileId": "Goagent",
             "urlPattern": "*://*.cloudfront.net/*"
