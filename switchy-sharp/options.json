@@ -3,7 +3,7 @@
         "autoPacScriptPath": ":memory:",
         "confirmDeletion": true,
         "firstTime": ":]",
-        "lastListUpdate": "Fri Jul 04 2014 09:12:46 GMT+0800 (CST)",
+        "lastListUpdate": "Wed Jul 09 2014 09:13:00 GMT+0800 (CST)",
         "monitorProxyChanges": true,
         "pacScriptData": "",
         "preventProxyChanges": false,
@@ -109,11 +109,18 @@
             "name": "Cloud Flare",
             "patternType": "wildcard",
             "profileId": "Goagent",
-            "urlPattern": "*://cdnjs.cloudflare.com/*"
+            "urlPattern": "*://*.cloudflare.com/*"
+        },
+        "Double Click": {
+            "id": "Double Click",
+            "name": "Double Click",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://*.doubleclick.net/*"
         },
         "Dropbox": {
             "id": "Dropbox",
-            "name": "Dropbox Main",
+            "name": "Dropbox",
             "patternType": "wildcard",
             "profileId": "Goagent",
             "urlPattern": "*://*.dropbox.com/*"
@@ -169,7 +176,7 @@
         },
         "SourceForge": {
             "id": "SourceForge",
-            "name": "SourceForge",
+            "name": "Source Forge",
             "patternType": "wildcard",
             "profileId": "Goagent",
             "urlPattern": "*://*.sourceforge.net/*"
@@ -183,7 +190,7 @@
         },
         "forDropBox": {
             "id": "forDropBox",
-            "name": "DropBox Cloud",
+            "name": "Cloud Front",
             "patternType": "wildcard",
             "profileId": "Goagent",
             "urlPattern": "*://*.cloudfront.net/*"
