@@ -136,3 +136,7 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for Europeans
 #command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# Setup or dismiss (goagent) proxy for curl, wget, etc.
+alias gaproxy='export http_proxy=http://127.0.0.1:8087 https_proxy=http://127.0.0.1:8087'
+alias noproxy='unset http_proxy https_proxy'
