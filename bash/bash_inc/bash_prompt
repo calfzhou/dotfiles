@@ -59,6 +59,14 @@ prompt_git() {
     fi;
 }
 
+prompt_venv() {
+    # Get current Python virtual env if any.
+    if [[ "$VIRTUAL_ENV" != "" ]]; then
+        # Strip out the path and just leave the env name.
+        echo -e "${1}(${VIRTUAL_ENV##*/})"
+    fi;
+}
+
 if tput setaf 1 &> /dev/null; then
     tput sgr0; # reset colors
     bold=$(tput bold);
@@ -110,6 +118,7 @@ PS1+="\[${cyan}\][\t] "
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\]@";
 PS1+="\[${hostStyle}\]\h"; # host
+PS1+="\$(prompt_venv \"${white} ${purple}\")"; # virtual env
 PS1+="\[${white}\] ";
 PS1+="\[${green}\]\w"; # working directory
 PS1+="\$(prompt_git \"${white} on ${violet}\")"; # Git repository details
