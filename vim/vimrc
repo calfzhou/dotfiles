@@ -62,3 +62,6 @@ autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal g
 " show control characters
 set list
 set listchars=tab:»·,nbsp:·,trail:·
+
+" disable riv folding
+let g:riv_disable_folding = 1
