@@ -65,3 +65,5 @@ set listchars=tab:»·,nbsp:·,trail:·
 
 " disable riv folding
 let g:riv_disable_folding = 1
+" change riv browser to chrome
+let g:riv_web_browser = "chrome"
