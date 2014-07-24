@@ -22,3 +22,6 @@
 [submodule "_include/vim-pathogen"]
 	path = _include/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/riv"]
+	path = vim/bundle/riv
+	url = https://github.com/Rykka/riv.vim.git
