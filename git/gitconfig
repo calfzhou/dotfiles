@@ -50,7 +50,7 @@
 
 [merge]
     # Include summaries of merged commits in newly created merge commit messages
-    log = true
+    log = false
 
 [push]
     # Use the Git 1.x.x default to avoid errors on machines with old Git
