@@ -118,10 +118,10 @@ PS1+="\[${cyan}\][\t] "
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\]@";
 PS1+="\[${hostStyle}\]\h"; # host
-PS1+="\$(prompt_venv \"${white} ${purple}\")"; # virtual env
+PS1+="\$(prompt_venv \"${white} ${purple}\" 2>/dev/null)"; # virtual env
 PS1+="\[${white}\] ";
 PS1+="\[${green}\]\w"; # working directory
-PS1+="\$(prompt_git \"${white} on ${violet}\")"; # Git repository details
+PS1+="\$(prompt_git \"${white} on ${violet}\" 2>/dev/null)"; # Git repository details
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
