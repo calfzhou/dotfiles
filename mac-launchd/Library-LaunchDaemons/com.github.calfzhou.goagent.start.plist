@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.github.calfzhou.goagent.start</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/zhouji/.virtualenvs/goagent/bin/python</string>
+        <string>proxy.py</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>ServiceDescription</key>
+    <string>Goagnet proxy</string>
+    <key>StandardErrorPath</key>
+    <string>/dev/null</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/zhouji/tools/goagent/local</string>
+</dict>
+</plist>
