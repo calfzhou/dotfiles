@@ -3,7 +3,7 @@
         "autoPacScriptPath": ":memory:",
         "confirmDeletion": true,
         "firstTime": ":]",
-        "lastListUpdate": "Wed Jul 09 2014 09:13:00 GMT+0800 (CST)",
+        "lastListUpdate": "Thu Oct 23 2014 01:05:34 GMT+0800 (CST)",
         "monitorProxyChanges": true,
         "pacScriptData": "",
         "preventProxyChanges": false,
@@ -18,7 +18,7 @@
         "ruleListEnabled": true,
         "ruleListProfileId": "Goagent",
         "ruleListReload": "720",
-        "ruleListUrl": "http://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt",
+        "ruleListUrl": "https://github.com/calfzhou/autoproxy-gfwlist/blob/trunk/gfwlist.txt",
         "rulesFirstTime": ";]",
         "startupProfileId": "",
         "switchRules": true
@@ -48,7 +48,7 @@
         "GoCalf": {
             "color": "purple",
             "id": "GoCalf",
-            "name": "Weiboyi",
+            "name": "SSH-Tunnel",
             "proxyConfigUrl": "",
             "proxyExceptions": "localhost; 127.0.0.1; <local>",
             "proxyFtp": "",
@@ -94,7 +94,7 @@
             "proxyConfigUrl": "",
             "proxyExceptions": "localhost; 127.0.0.1; <local>",
             "proxyFtp": "",
-            "proxyHttp": "10.211.55.15:8087",
+            "proxyHttp": "192.168.1.104:8087",
             "proxyHttps": "",
             "proxyMode": "manual",
             "proxySocks": "",
@@ -124,6 +124,13 @@
             "patternType": "wildcard",
             "profileId": "Goagent",
             "urlPattern": "*://*.dropbox.com/*"
+        },
+        "GStatic": {
+            "id": "GStatic",
+            "name": "GStatic",
+            "patternType": "wildcard",
+            "profileId": "Goagent",
+            "urlPattern": "*://ssl.gstatic.com/*"
         },
         "Google Analytics": {
             "id": "Google Analytics",
@@ -192,7 +199,7 @@
             "id": "forDropBox",
             "name": "Cloud Front",
             "patternType": "wildcard",
-            "profileId": "Goagent",
+            "profileId": "direct",
             "urlPattern": "*://*.cloudfront.net/*"
         }
     },
