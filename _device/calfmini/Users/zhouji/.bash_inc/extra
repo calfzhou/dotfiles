@@ -1,0 +1,19 @@
+export DOTFILES_HOME="/Users/zhouji/dotfiles"
+
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home`
+#export ANDROID_HOME="/usr/local/android-sdk-macosx"
+export ANDROID_HOME=/usr/local/opt/android-sdk
+#export M2_HOME="/usr/local/Cellar/maven/3.2.2"
+#export M2_HOME="/usr/local/Cellar/maven30/3.0.5/"
+
+# Python virtualenv and virtualenvwrapper related.
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/projects
+[ -f "/usr/local/bin/virtualenvwrapper.sh" ] && source "/usr/local/bin/virtualenvwrapper.sh"
+
+export MONO_GAC_PREFIX="/usr/local"
+
+# Homebrew configuration
+export HOMEBREW_GITHUB_API_TOKEN=bfa9cb73a0d5796be68bdbfd8837a73e9f335ec3

@@ -1,0 +1,19 @@
+# Add home brew bins
+PATH="/usr/local/bin:${PATH}"
+
+# Add GNU bins and mans
+PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
+
+# Setting PATH for Python 2.7
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+
+# added by Anaconda 1.8.0 installer
+#PATH="/Users/zhouji/anaconda/bin:${PATH}"
+
+# Custom path
+#PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:${PATH}"
+PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:${PATH}"
+
+export PATH
+export MANPATH
