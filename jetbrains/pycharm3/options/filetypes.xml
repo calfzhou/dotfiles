@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="FileTypeManager" version="11">
+    <ignoreFiles list="CVS;SCCS;RCS;rcs;.DS_Store;.svn;.pyc;.pyo;*.pyc;*.pyo;.git;*.hprof;_svn;.hg;*.lib;*~;__pycache__;.bundle;*.rbc;*$py.class;" />
+    <extensionMap>
+      <mapping pattern="evaluations" type="PLAIN_TEXT" />
+      <mapping pattern="client_standard" type="PLAIN_TEXT" />
+      <mapping pattern="._tests" type="PLAIN_TEXT" />
+      <mapping pattern="._babysitter_audience_evaluation_mobileclient" type="PLAIN_TEXT" />
+      <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
+      <mapping pattern="labeled_data" type="PLAIN_TEXT" />
+      <mapping ext="pem" type="PLAIN_TEXT" />
+      <mapping ext="tsv" type="PLAIN_TEXT" />
+      <mapping ext="csv" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="orderly" type="PLAIN_TEXT" />
+      <mapping ext="d" type="PLAIN_TEXT" />
+      <mapping ext="42_+0800" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
+

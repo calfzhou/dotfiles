@@ -1,0 +1,3 @@
+com.intellij
+com.paperetto.dash
+net.nicoulaj.idea.markdown
