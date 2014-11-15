@@ -15,5 +15,9 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
 #PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:${PATH}"
 PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:${PATH}"
 
+# Phabricator's Arcanist
+PATH="$PATH:/Users/zhouji/tools/arcanist/bin"
+source "/Users/zhouji/tools/arcanist/resources/shell/bash-completion"
+
 export PATH
 export MANPATH
