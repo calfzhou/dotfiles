@@ -3,7 +3,7 @@
         "autoPacScriptPath": ":memory:",
         "confirmDeletion": true,
         "firstTime": ":]",
-        "lastListUpdate": "Thu Oct 23 2014 01:05:34 GMT+0800 (CST)",
+        "lastListUpdate": "Tue Oct 28 2014 23:55:47 GMT+0800 (CST)",
         "monitorProxyChanges": true,
         "pacScriptData": "",
         "preventProxyChanges": false,
@@ -130,7 +130,7 @@
             "name": "GStatic",
             "patternType": "wildcard",
             "profileId": "Goagent",
-            "urlPattern": "*://ssl.gstatic.com/*"
+            "urlPattern": "*://*.gstatic.com/*"
         },
         "Google Analytics": {
             "id": "Google Analytics",
