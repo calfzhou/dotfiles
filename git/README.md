@@ -9,6 +9,7 @@ Usage
 ```shell
 cd ~
 ln -s $DOTFILES_HOME/git/gitconfig .gitconfig
+ln -s $DOTFILES_HOME/git/gitignore .gitignore_global
 ```
 
 ### Windows ###

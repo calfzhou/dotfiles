@@ -1,5 +1,5 @@
 [user]
-    name = zhouji
+    name = Ji Zhou
     email = calf.zhou@gmail.com
 
 [core]
@@ -14,6 +14,7 @@
     # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
     trustctime = false
     pager = less -+S -FXR
+    excludesfile = ~/.gitignore_global
 
 [apply]
     # Detect whitespace errors when applying a patch
