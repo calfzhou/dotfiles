@@ -25,3 +25,6 @@
 [submodule "vim/bundle/riv"]
 	path = vim/bundle/riv
 	url = https://github.com/Rykka/riv.vim.git
+[submodule "vim/bundle/editorconfig"]
+	path = vim/bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
