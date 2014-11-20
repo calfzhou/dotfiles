@@ -28,3 +28,6 @@
 [submodule "vim/bundle/editorconfig"]
 	path = vim/bundle/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/clickable"]
+	path = vim/bundle/clickable
+	url = https://github.com/Rykka/clickable.vim.git
