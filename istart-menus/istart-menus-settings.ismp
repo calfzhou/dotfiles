@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>build</key>
+	<real>585</real>
+	<key>license</key>
+	<string>1831-1145-4797-1749-2394</string>
+	<key>preferences</key>
+	<dict>
+		<key>CPU_AppFormat</key>
+		<integer>0</integer>
+		<key>CPU_MenubarCombineCores</key>
+		<integer>1</integer>
+		<key>CPU_MenubarGraphCustomColors</key>
+		<integer>1</integer>
+		<key>CPU_MenubarGraphOverall</key>
+		<string>0.95 0.22 0.13 1.00</string>
+		<key>CPU_MenubarGraphWidth</key>
+		<real>20</real>
+		<key>CPU_MenubarGroupItems</key>
+		<integer>0</integer>
+		<key>CPU_MenubarMode</key>
+		<string>6</string>
+		<key>CombinedDropdownDisplayMode</key>
+		<string>7,2</string>
+		<key>CombinedMenubarDisplayMode</key>
+		<string>1,7</string>
+		<key>Diagnostics_Enabled</key>
+		<integer>0</integer>
+		<key>Disks_MenubarGraphCustomColors</key>
+		<integer>0</integer>
+		<key>Disks_MenubarGraphOverallColor</key>
+		<string>0.28 0.92 0.26 1.00</string>
+		<key>Disks_MenubarMode</key>
+		<string>0</string>
+		<key>Memory_AppFormat</key>
+		<integer>0</integer>
+		<key>Memory_MenubarGraphCustomColors</key>
+		<integer>1</integer>
+		<key>Memory_MenubarGraphOverall</key>
+		<string>0.05 0.92 0.12 1.00</string>
+		<key>Memory_MenubarMode</key>
+		<string>1</string>
+		<key>MenubarSkinColor</key>
+		<integer>0</integer>
+		<key>MenubarTheme</key>
+		<integer>0</integer>
+		<key>Network_MenubarMode</key>
+		<string>0</string>
+		<key>Sensors_MenubarMode</key>
+		<string>0</string>
+		<key>Time_DropdownFormat</key>
+		<array>
+			<string>EE</string>
+			<string>' '</string>
+			<string>HH</string>
+			<string>':'</string>
+			<string>mm</string>
+		</array>
+		<key>Time_MenubarFormat</key>
+		<array>
+			<string>' '</string>
+			<string>EE</string>
+			<string>' '</string>
+			<string>MMM</string>
+			<string>' '</string>
+			<string>d</string>
+			<string>' '</string>
+			<string>HH</string>
+			<string>':'</string>
+			<string>mm</string>
+		</array>
+		<key>UpdateCheckerDisabled</key>
+		<true/>
+	</dict>
+	<key>version</key>
+	<real>5.0300002098083496</real>
+</dict>
+</plist>
