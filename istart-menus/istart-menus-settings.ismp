@@ -50,6 +50,12 @@
 		<string>0</string>
 		<key>Sensors_MenubarMode</key>
 		<string>0</string>
+		<key>Time_Cities</key>
+		<array>
+			<real>5809844</real>
+			<real>5128581</real>
+			<real>2643743</real>
+		</array>
 		<key>Time_DropdownFormat</key>
 		<array>
 			<string>EE</string>
