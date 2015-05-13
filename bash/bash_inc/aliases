@@ -147,3 +147,6 @@ alias noproxy='unset http_proxy https_proxy'
 # Usage: json2yaml < in.json > out.yaml
 alias yaml2json='ruby -ryaml -rjson -e "puts JSON.pretty_generate(YAML.load(ARGF))"'
 alias json2yaml='ruby -ryaml -rjson -e "puts YAML.dump(JSON.parse(STDIN.read))'
+
+# Generate UUID
+alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
