@@ -1,0 +1,8 @@
+storage
+compile-cache
+dev
+.npm
+.node-gyp
+.apm
+packages/*
+!packages/README.md

@@ -1,0 +1,51 @@
+"*":
+  editor:
+    invisibles:
+      {}
+    preferredLineLength: 100
+    fontSize: 14
+    showIndentGuide: true
+    showInvisibles: true
+  core:
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "5e43159c-0af7-4614-979c-e04f25a71578"
+  welcome:
+    showOnStartup: false
+  linter:
+    ignoredLinterErrors: [
+      "rubocop"
+    ]
+    subtleLinterErrors: [
+      "pylint"
+    ]
+  "atom-beautify":
+    _analyticsUserId: "65f4271a-cd10-4224-b2bd-ee72bc113080"
+    analytics: false
+  "vim-mode":
+    startInInsertMode: true
+  minimap:
+    {}
+  "git-log":
+    fontScale: 0.8
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "source.js"
+      "source.ruby"
+      "source.ruby.rails"
+      "source.yaml"
+      "text.git-commit"
+      "text.html.erb"
+      "text.plain"
+    ]
+  "autocomplete-plus":
+    {}
+  "markdown-preview":
+    {}
+  "linter-coffeelint":
+    {}
