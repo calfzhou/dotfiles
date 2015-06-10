@@ -16,9 +16,6 @@
   welcome:
     showOnStartup: false
   linter:
-    ignoredLinterErrors: [
-      "rubocop"
-    ]
     subtleLinterErrors: [
       "pylint"
     ]
