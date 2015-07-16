@@ -1,15 +1,17 @@
-Goagent config files are compressed with password to prevent bad things happen.
+Goagent config files.
 
-Use `zip` command to compress them:
+Custom ip-list is compressed with password to prevent bad things happen.
+
+Use `zip` command to compress it:
 
 ```
-zip -e proxy.ini.zip proxy.ini
+zip -e iplist.ini.zip iplist.ini
 ```
 
 User `unzip` to decompress:
 
 ```
-unzip proxy.ini.zip
+unzip iplist.ini.zip
 ```
 
 ----
