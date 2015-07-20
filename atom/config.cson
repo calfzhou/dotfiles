@@ -1,11 +1,10 @@
 "*":
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     preferredLineLength: 100
-    fontSize: 14
     showIndentGuide: true
     showInvisibles: true
+    fontFamily: "Source Code Pro, Monaco, Consolas, Courier New"
   core:
     themes: [
       "atom-dark-ui"
@@ -16,16 +15,13 @@
   welcome:
     showOnStartup: false
   linter:
-    subtleLinterErrors: [
-      "pylint"
-    ]
+    showErrorPanel: false
   "atom-beautify":
     _analyticsUserId: "65f4271a-cd10-4224-b2bd-ee72bc113080"
     analytics: false
   "vim-mode":
     startInInsertMode: true
-  minimap:
-    {}
+  minimap: {}
   "git-log":
     fontScale: 0.8
   "spell-check":
@@ -40,9 +36,7 @@
       "text.html.erb"
       "text.plain"
     ]
-  "autocomplete-plus":
-    {}
+  "autocomplete-plus": {}
   "markdown-preview":
-    {}
-  "linter-coffeelint":
-    {}
+    useGitHubStyle: true
+  "linter-coffeelint": {}
