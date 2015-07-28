@@ -11,6 +11,7 @@ linter@1.2.4
 linter-coffeelint@1.0.0
 linter-csslint@0.0.14
 linter-htmlhint@0.0.17
+linter-jscs@1.13.0
 linter-jshint@1.0.5
 linter-less@2.0.3
 linter-pylint@0.2.2

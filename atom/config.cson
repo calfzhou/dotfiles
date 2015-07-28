@@ -40,3 +40,4 @@
   "markdown-preview":
     useGitHubStyle: true
   "linter-coffeelint": {}
+  "linter-jscs": {}
