@@ -4,7 +4,7 @@
     preferredLineLength: 100
     showIndentGuide: true
     showInvisibles: true
-    fontFamily: "Source Code Pro, Monaco, Consolas, Courier New"
+    fontFamily: "Source Code Pro, Monaco, Consolas, Courier New, monospace"
   core:
     themes: [
       "atom-dark-ui"
@@ -41,3 +41,5 @@
     useGitHubStyle: true
   "linter-coffeelint": {}
   "linter-jscs": {}
+  "linter-jshint":
+    lintInlineJavaScript: true
