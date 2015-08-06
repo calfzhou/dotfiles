@@ -43,3 +43,7 @@
   "linter-jscs": {}
   "linter-jshint":
     lintInlineJavaScript: true
+  "linter-csslint": {}
+  "linter-scss-lint":
+    executablePath: "scss-lint"
+  "linter-rubocop": {}
