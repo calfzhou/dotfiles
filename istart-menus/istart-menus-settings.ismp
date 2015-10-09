@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<real>585</real>
+	<real>633</real>
 	<key>license</key>
 	<string>1831-1145-4797-1749-2394</string>
 	<key>preferences</key>
@@ -36,6 +36,8 @@
 		<string>0</string>
 		<key>Memory_AppFormat</key>
 		<integer>0</integer>
+		<key>Memory_DisplayFormat</key>
+		<integer>0</integer>
 		<key>Memory_MenubarGraphCustomColors</key>
 		<integer>1</integer>
 		<key>Memory_MenubarGraphOverall</key>
@@ -44,12 +46,25 @@
 		<string>1</string>
 		<key>MenubarSkinColor</key>
 		<integer>0</integer>
+		<key>MenubarSkinColor-Dark</key>
+		<integer>0</integer>
+		<key>MenubarSkinColor-Light</key>
+		<integer>0</integer>
 		<key>MenubarTheme</key>
 		<integer>0</integer>
 		<key>Network_MenubarMode</key>
 		<string>0</string>
 		<key>Sensors_MenubarMode</key>
 		<string>0</string>
+		<key>StatusItems-Order</key>
+		<array>
+			<integer>4</integer>
+			<integer>1</integer>
+			<integer>2</integer>
+			<integer>3</integer>
+			<integer>5</integer>
+			<integer>7</integer>
+		</array>
 		<key>Time_Cities</key>
 		<array>
 			<real>5809844</real>
@@ -81,6 +96,6 @@
 		<true/>
 	</dict>
 	<key>version</key>
-	<real>5.0300002098083496</real>
+	<real>5.1100001335144043</real>
 </dict>
 </plist>
