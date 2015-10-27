@@ -66,8 +66,8 @@
     co = checkout
     diffw = diff --color-words
 
-    # View abbreviated SHA, description, and history graph of the latest 20 commits
-    l = log --pretty=oneline --graph --abbrev-commit
+    # View abbreviated SHA, description, ref name, and history graph
+    l = log --pretty=oneline --graph --abbrev-commit --decorate
 
     # View the current working tree status using the short format
     s = status -s
