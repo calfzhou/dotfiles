@@ -67,7 +67,7 @@
     diffw = diff --color-words
 
     # View abbreviated SHA, description, ref name, and history graph of the latest 20 commits
-    l = log --pretty=oneline -n 20 --graph --abbrev-commit --decorate
+    l = log --pretty=format:'%C(yellow)%h %Cblue%ad %Creset%s %Cgreen[%cn]%C(auto)%d' -n 20 --graph --abbrev-commit --decorate --date=short
 
     # View the current working tree status using the short format
     s = status -s
@@ -111,10 +111,10 @@
     ft = "!f() { git describe --always --contains $1; }; f"
 
     # Find commits by source code
-    fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+    fc = "!f() { git log --pretty=format:'%C(yellow)%h %Cblue%ad %Creset%s %Cgreen[%cn]%C(auto)%d' --decorate --date=short -S$1; }; f"
 
     # Find commits by commit message
-    fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+    fm = "!f() { git log --pretty=format:'%C(yellow)%h %Cblue%ad %Creset%s %Cgreen[%cn]%C(auto)%d' --decorate --date=short --grep=$1; }; f"
 
     # Remove branches that have already been merged with master
     # a.k.a. ‘delete merged’
