@@ -31,3 +31,6 @@
 [submodule "vim/bundle/clickable"]
 	path = vim/bundle/clickable
 	url = https://github.com/Rykka/clickable.vim.git
+[submodule "_include/dircolors-solarized"]
+	path = _include/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git
