@@ -6,3 +6,4 @@ dev
 .apm
 packages/*
 !packages/README.md
+blob-store/*
