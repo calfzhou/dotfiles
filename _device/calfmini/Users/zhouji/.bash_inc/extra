@@ -16,4 +16,4 @@ export PROJECT_HOME=$HOME/projects
 export MONO_GAC_PREFIX="/usr/local"
 
 # Homebrew configuration
-export HOMEBREW_GITHUB_API_TOKEN=bfa9cb73a0d5796be68bdbfd8837a73e9f335ec3
+#export HOMEBREW_GITHUB_API_TOKEN=https://gist.github.com/christopheranderton/8644743
