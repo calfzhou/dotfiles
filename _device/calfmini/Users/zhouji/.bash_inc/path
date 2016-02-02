@@ -1,5 +1,5 @@
 # Add home brew bins
-PATH="/usr/local/bin:$PATH"
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Add GNU bins and mans
 GUN_HOME="/usr/local/opt/coreutils/libexec"
