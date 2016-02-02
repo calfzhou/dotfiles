@@ -10,7 +10,7 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
     echo "Usage: `basename $0` [seconds]" >&2
     echo "  When 'seconds' is omit, the proxy will last for ever."
 elif [ "$1" == "" ]; then
-    ssh -C -f -D 7070 -p 22 -N gocalfco@gocalf.com
+    ssh -C -f -D 7070 -p 53122 -N vpnx.xunhuji.me
 else
-    ssh -C -f -D 7070 -p 22 gocalfco@gocalf.com sleep "$1"
+    ssh -C -f -D 7070 -p 53122 vpnx.xunhuji.me sleep "$1"
 fi
