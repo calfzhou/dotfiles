@@ -1,6 +1,8 @@
 atom-beautify@0.28.21
+atom-yamljson@0.2.3
 autocomplete-paths@1.0.2
 color-picker@2.1.0
+cson@2.0.1
 dash@1.6.0
 editorconfig@1.2.4
 file-icons@1.6.14
