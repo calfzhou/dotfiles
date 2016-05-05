@@ -58,7 +58,7 @@
     # installations. To use `simple` instead, add this to your
     # `~/.bash_inc/extra` file:
     # `git config --global push.default simple`. See http://git.io/mMah-w.
-    default = matching
+    default = current
 
 [alias]
     st = status
