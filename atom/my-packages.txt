@@ -1,6 +1,9 @@
+atom-autocomplete-php@0.18.9
 atom-beautify@0.29.7
 atom-yamljson@0.2.3
+autocomplete-json@1.9.1
 autocomplete-paths@1.0.2
+autocomplete-python@1.7.2
 blame@0.10.0
 color-picker@2.1.1
 cson@2.0.1
@@ -35,4 +38,5 @@ seti-syntax@1.0.1
 seti-ui@1.0.4
 todo-show@1.6.0
 vim-mode@0.65.0
+
 
