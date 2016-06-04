@@ -17,6 +17,11 @@ RVM_HOME="$HOME/.rvm"
 [[ -s "$RVM_HOME/scripts/rvm" ]] && source "$RVM_HOME/scripts/rvm"
 [[ -s "$RVM_HOME/scripts/completion" ]] && source "$RVM_HOME/scripts/completion"
 
+# NVM
+NVM_DIR="$HOME/.nvm"
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+[[ -r "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
+
 # Misc
 # PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:$PATH"
 
