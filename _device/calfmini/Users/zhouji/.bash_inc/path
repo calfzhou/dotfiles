@@ -11,14 +11,21 @@ ARC_HOME="$HOME/tools/arcanist"
 [[ -d "$ARC_HOME/bin" ]] && PATH="$ARC_HOME/bin:$PATH"
 [[ -s "$ARC_HOME/resources/shell/bash-completion" ]] && source "$ARC_HOME/resources/shell/bash-completion"
 
+# Composer
+COMPOSER_HOME="$HOME/.composer"
+[[ -d "$COMPOSER_HOME/vendor/bin" ]] && PATH="$COMPOSER_HOME/vendor/bin:$PATH"
+
+# Misc
+# PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:$PATH"
+
 # RVM
 RVM_HOME="$HOME/.rvm"
 [[ -d "$RVM_HOME/bin" ]] && PATH="$RVM_HOME/bin:$PATH"
 [[ -s "$RVM_HOME/scripts/rvm" ]] && source "$RVM_HOME/scripts/rvm"
 [[ -s "$RVM_HOME/scripts/completion" ]] && source "$RVM_HOME/scripts/completion"
 
-# Misc
-# PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:$PATH"
+# Yunniao Toolkit
+[[ -d "$HOME/tools/yunniao-toolkit/bin" ]] && PATH="$HOME/tools/yunniao-toolkit/bin:$PATH"
 
 export PATH
 export MANPATH

@@ -17,3 +17,5 @@ export MONO_GAC_PREFIX="/usr/local"
 
 # Homebrew configuration
 #export HOMEBREW_GITHUB_API_TOKEN=https://gist.github.com/christopheranderton/8644743
+
+alias artisan='php artisan'
