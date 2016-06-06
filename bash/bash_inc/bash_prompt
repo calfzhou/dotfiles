@@ -76,6 +76,13 @@ prompt_rvm() {
     [ "$full" != "" ] && echo -e "${1}$full"
 }
 
+prompt_nvm() {
+    if [ "$NVM_DIR" != '' ]; then
+        local version=$(nvm ls current | awk -F'v' '{print $2}')
+        [ "$version" != "" ] && echo -e "${1}r$version"
+    fi
+}
+
 if tput setaf 1 &> /dev/null; then
     tput sgr0; # reset colors
     bold=$(tput bold);
@@ -129,6 +136,7 @@ PS1+="\[${white}\]@";
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\$(prompt_venv \"${white} ${purple}\" 2>/dev/null)"; # virtual env
 PS1+="\$(prompt_rvm \"${white} ${blue}\" 2>/dev/null)"; # rvm version
+PS1+="\$(prompt_nvm \"${white} ${violet}\" 2>/dev/null)"; # nvm version
 PS1+="\[${white}\] ";
 PS1+="\[${green}\]\w"; # working directory
 PS1+="\$(prompt_git \"${white} on ${violet}\" 2>/dev/null)"; # Git repository details
