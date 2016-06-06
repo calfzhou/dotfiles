@@ -27,5 +27,10 @@ RVM_HOME="$HOME/.rvm"
 # Yunniao Toolkit
 [[ -d "$HOME/tools/yunniao-toolkit/bin" ]] && PATH="$HOME/tools/yunniao-toolkit/bin:$PATH"
 
+# NVM
+NVM_DIR="$HOME/.nvm"
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+[[ -r "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
+
 export PATH
 export MANPATH
