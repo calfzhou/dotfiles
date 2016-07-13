@@ -1,7 +1,7 @@
 export DOTFILES_HOME="/Users/zhouji/dotfiles"
 
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
-export JAVA_HOME=`/usr/libexec/java_home`
+/usr/libexec/java_home 2>/dev/null && export JAVA_HOME=`/usr/libexec/java_home`
 #export ANDROID_HOME="/usr/local/android-sdk-macosx"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 #export M2_HOME="/usr/local/Cellar/maven/3.2.2"
