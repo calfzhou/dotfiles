@@ -33,8 +33,6 @@ set cinoptions=:N
 
 set nocp
 
-set mouse=a
-
 " Share clipboard with Windows
 set clipboard+=unnamed
 
