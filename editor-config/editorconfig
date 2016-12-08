@@ -1,0 +1,33 @@
+# http://editorconfig.org/
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+max_line_length = 100
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+
+[*.tsv]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = false
+
+[*.py]
+indent_size = 4
+
+[*.{json,yml,yaml,cson}]
+indent_size = 2
+
+[*.{coffee,js,scss,css}]
+indent_size = 2
+
+[*.{rb,.html.erb}]
+indent_size = 2
+
+[*.bat]
+end_of_line = crlf
