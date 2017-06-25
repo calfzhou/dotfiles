@@ -1,34 +1,64 @@
 "*":
-  editor:
-    invisibles: {}
-    preferredLineLength: 100
-    showIndentGuide: true
-    showInvisibles: true
-    fontFamily: "Source Code Pro, Monaco, Consolas, Courier New, monospace"
+  "atom-beautify":
+    general:
+      _analyticsUserId: "65f4271a-cd10-4224-b2bd-ee72bc113080"
+      analytics: false
+  "autocomplete-plus": {}
+  "autocomplete-python":
+    useKite: false
   core:
+    disabledPackages: [
+      "vim-mode"
+      "language-log"
+    ]
+    telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
       "solarized-dark-syntax"
     ]
+  editor:
+    fontFamily: "Source Code Pro, Monaco, Consolas, Courier New, monospace"
+    invisibles: {}
+    preferredLineLength: 100
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 4
+    tabLength: 4
   "exception-reporting":
     userId: "5e43159c-0af7-4614-979c-e04f25a71578"
-  welcome:
-    showOnStartup: false
-  linter:
-    showErrorPanel: false
-  "atom-beautify":
-    _analyticsUserId: "65f4271a-cd10-4224-b2bd-ee72bc113080"
-    analytics: false
-  "vim-mode":
-    startInInsertMode: true
-  minimap: {}
   "git-log":
     fontScale: 0.8
+  "language-log":
+    tail: true
+  linter: {}
+  "linter-coffeelint": {}
+  "linter-csslint": {}
+  "linter-jscs": {}
+  "linter-jshint":
+    lintInlineJavaScript: true
+  "linter-pylint":
+    executablePath: "/Users/zhouji/.virtualenvs/default/bin/pylint"
+  "linter-rubocop": {}
+  "linter-scss-lint":
+    executablePath: "scss-lint"
+  "linter-ui-default": {}
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap: {}
+  "plantuml-preview":
+    dotLocation: "/usr/local/bin/dot"
+    jarLocation: "/usr/local/Cellar/plantuml/8057/libexec/plantuml.jar"
+    outputFormat: "png"
+    useTempDir: false
+    zoomToFit: false
   "spell-check":
     grammars: [
       "source.asciidoc"
       "source.gfm"
       "source.js"
+      "source.php"
       "source.ruby"
       "source.ruby.rails"
       "source.yaml"
@@ -36,14 +66,11 @@
       "text.html.erb"
       "text.plain"
     ]
-  "autocomplete-plus": {}
-  "markdown-preview":
-    useGitHubStyle: true
-  "linter-coffeelint": {}
-  "linter-jscs": {}
-  "linter-jshint":
-    lintInlineJavaScript: true
-  "linter-csslint": {}
-  "linter-scss-lint":
-    executablePath: "scss-lint"
-  "linter-rubocop": {}
+  "vim-mode":
+    startInInsertMode: true
+  welcome:
+    showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
