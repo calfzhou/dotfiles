@@ -43,7 +43,8 @@
   "linter-rubocop": {}
   "linter-scss-lint":
     executablePath: "scss-lint"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    panelHeight: 81
   "markdown-preview":
     useGitHubStyle: true
   minimap: {}
