@@ -18,6 +18,9 @@ COMPOSER_HOME="$HOME/.composer"
 # Misc
 # PATH="/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:$PATH"
 
+# Python
+PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 # RVM
 RVM_HOME="$HOME/.rvm"
 [[ -d "$RVM_HOME/bin" ]] && PATH="$RVM_HOME/bin:$PATH"
