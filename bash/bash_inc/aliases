@@ -39,6 +39,9 @@ if [ "$TERM" != "dumb" ]; then
     fi
 fi
 
+# Always enable colored `grep` output
+alias grep='grep --color=auto'
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
