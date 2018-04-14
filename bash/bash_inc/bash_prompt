@@ -144,5 +144,6 @@ PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
 
+# Need install gnu sed: `brew install gnu-sed --with-default-names`
 PS2="\[${yellow}\]→ \[${reset}\]";
 export PS2;
