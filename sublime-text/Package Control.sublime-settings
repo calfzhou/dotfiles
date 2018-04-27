@@ -5,7 +5,10 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"Package Control",
-		"Solarized Color Scheme"
+		"SideBarEnhancements",
+		"Solarized Color Scheme",
+		"SummitLinter"
 	]
 }
