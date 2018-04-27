@@ -207,6 +207,7 @@ function getcertnames() {
 # opens the given location
 # Note that on Mac OS X, `subl` can be found at:
 #   /Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl
+#   /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl
 function s() {
     if [ $# -eq 0 ]; then
         subl .;
