@@ -123,6 +123,9 @@
     # List contributors with number of commits
     contributors = shortlog --summary --numbered
 
+    # Run gitignore.io with git
+    ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+
 # URL shorthands
 
 [url "git@github.com:"]
