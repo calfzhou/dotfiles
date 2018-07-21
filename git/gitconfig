@@ -67,7 +67,7 @@
     diffw = diff --color-words
 
     # View abbreviated SHA, description, ref name, and history graph of the latest 20 commits
-    l = log --pretty=format:'%C(yellow)%h %Cblue%ad %Creset%s %Cgreen[%cn]%C(auto)%d' -n 20 --graph --abbrev-commit --decorate --date=short
+    l = log --pretty=format:'%C(yellow)%h %Cblue%ad %Creset%s %Cgreen[%cn]%C(auto)%d' -n 20 --graph --abbrev-commit --decorate '--date=format:%Y-%m-%d %H:%M'
 
     # View the current working tree status using the short format
     s = status -s
