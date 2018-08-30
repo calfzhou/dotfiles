@@ -32,5 +32,8 @@ indent_size = 2
 [*.pu]
 indent_size = 2
 
+[*.tex]
+indent_size = 2
+
 [*.bat]
 end_of_line = crlf
