@@ -6,9 +6,11 @@
 	"installed_packages":
 	[
 		"A File Icon",
+		"EditorConfig",
 		"Package Control",
 		"SideBarEnhancements",
 		"Solarized Color Scheme",
-		"SummitLinter"
+		"SummitLinter",
+		"Theme - Solarized Space"
 	]
 }
