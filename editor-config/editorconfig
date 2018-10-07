@@ -37,3 +37,6 @@ indent_size = 2
 
 [*.bat]
 end_of_line = crlf
+
+[*.{h,c,cpp,hpp}]
+indent_size = 2
