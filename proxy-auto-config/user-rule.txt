@@ -1,6 +1,9 @@
 ! Put user rules line by line in this file.
 ! See https://adblockplus.org/en/filter-cheatsheet
-||.cloudfront.net^
-||confluence.atlassian.com^
-||support.atlassian.com^
-||marketplace-cdn.atlassian.com^
+||cloudfront.net^
+||atlassian.com^
+||balsamiq.com^
+||discourse-cdn-sjc1.com^
+||amazonaws.com^
+||cdn.segment.com^
+||get-scatter.com^
