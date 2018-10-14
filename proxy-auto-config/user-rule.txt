@@ -7,3 +7,4 @@
 ||amazonaws.com^
 ||cdn.segment.com^
 ||get-scatter.com^
+||reddit.com^
