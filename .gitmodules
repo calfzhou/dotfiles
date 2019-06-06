@@ -34,3 +34,9 @@
 [submodule "_include/dircolors-solarized"]
 	path = _include/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "zsh/zsh-custom/plugins/zsh-autosuggestions"]
+	path = zsh/zsh-custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "zsh/zsh-custom/plugins/zsh-syntax-highlighting"]
+	path = zsh/zsh-custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git

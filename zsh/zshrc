@@ -64,6 +64,9 @@ CASE_SENSITIVE="true"
 # Skip the verification of insecure directories.
 ZSH_DISABLE_COMPFIX="true"
 
+# The style that the auto-suggestion is shown with.
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM="$HOME/.zsh-custom"
 
@@ -72,6 +75,6 @@ ZSH_CUSTOM="$HOME/.zsh-custom"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(virtualenv virtualenvwrapper)
+plugins=(virtualenv virtualenvwrapper zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
