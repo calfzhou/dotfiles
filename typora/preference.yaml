@@ -1,0 +1,22 @@
+general:
+  theme: http://theme.typora.io/theme/Solarized/
+  font-size: 14px
+  collapsible-outline-on-left-panel: true
+  images-insert: copy image to ./${filename}.assets
+  apply-above-rules-to-local-images: true
+  use-relative-path-if-possible: true
+  auto-pair-brackets and quotes: true
+  auto-pair-common-markdown-syntax: true
+  display-source-for-simple-blocks-on-focus: true
+  copy-markdown-source-as-plain-text: true
+  syntax-support: all
+  heading-style: 'atx (#)'
+  unordered-list: '*'
+  ordered-list: '1. 2. 3.'
+  smart-quotes: false
+  smart-dashes: true
+  convert-on-rendering: true
+  display-line-numbers-for-code-fences: true
+  auto-wrap-long-lines: true
+  indent-size-for-code: 2
+  ignore-whitespace-and-single-line: both
