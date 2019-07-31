@@ -15,6 +15,9 @@ ARC_HOME="$HOME/tools/arcanist"
 COMPOSER_HOME="$HOME/.composer"
 [[ -d "$COMPOSER_HOME/vendor/bin" ]] && PATH="$COMPOSER_HOME/vendor/bin:$PATH"
 
+# Laravel Valet
+[[ -d "~/.composer/vendor/bin" ]] && PATH="~/.composer/vendor/bin:$PATH"
+
 # Unversioned Python
 [[ -d "/usr/local/opt/python/libexec/bin" ]] && PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
