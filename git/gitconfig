@@ -15,6 +15,7 @@
     trustctime = false
     pager = less -+S -FXR
     excludesfile = ~/.gitignore_global
+    quotePath = false
 
 [apply]
     # Detect whitespace errors when applying a patch
@@ -152,6 +153,6 @@
     cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
 
-# Include for all wuhao repositories.
-[includeIf "gitdir:~/wuhao/"]
-    path = ~/wuhao/.gitconfig
+# Conditional includes.
+# [includeIf "gitdir:~/myfolder/"]
+#     path = ~/myfolder/.gitconfig
