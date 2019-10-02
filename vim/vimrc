@@ -20,6 +20,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+" maxmempattern
+set mmp=5000
+
 " Fix `crontab: temp file must be edited in place` issue
 " http://calebthompson.io/crontab-and-vim-sitting-in-a-tree/
 autocmd filetype crontab setlocal nobackup nowritebackup
