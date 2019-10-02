@@ -1,9 +1,0 @@
-cffi==0.8.6
-cryptography==0.5.2
-gevent==1.0.1
-greenlet==0.4.2
-pyOpenSSL==0.14
-pycparser==2.10
-pycrypto==2.6.1
-six==1.7.3
-wsgiref==0.1.2
