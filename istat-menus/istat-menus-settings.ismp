@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<real>912</real>
+	<string>1116</string>
 	<key>license</key>
 	<dict>
 		<key>email</key>
@@ -13,6 +13,30 @@
 	</dict>
 	<key>preferences</key>
 	<dict>
+		<key>Battery_MenubarMode</key>
+		<array>
+			<dict>
+				<key>key</key>
+				<string>7</string>
+				<key>uuid</key>
+				<string>66B27AB9-9E6E-4198-BA4A-47E83A65FF8A</string>
+			</dict>
+		</array>
+		<key>Battery_MenubarModeBluetooth</key>
+		<array>
+			<dict>
+				<key>key</key>
+				<string>8</string>
+				<key>uuid</key>
+				<string>D6832386-6352-43F5-B179-93AC169020E0</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>6</string>
+				<key>uuid</key>
+				<string>70921597-AADB-4AD3-A789-7236BF219F6A</string>
+			</dict>
+		</array>
 		<key>CPU_AppFormat</key>
 		<integer>1</integer>
 		<key>CPU_MenubarCombineCores</key>
@@ -40,13 +64,43 @@
 				<key>key</key>
 				<string>7</string>
 				<key>uuid</key>
-				<string>05FB6A46-E2F5-4973-9FB8-F1AE645D9067</string>
+				<string>735C431C-1566-4070-878A-D614914D7159</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>6</string>
+				<key>uuid</key>
+				<string>C194055C-6761-46B2-B48A-41002561BB47</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>5</string>
+				<key>uuid</key>
+				<string>A93D7728-1236-4E79-8A0A-DE27A7B61E64</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>1</string>
+				<key>uuid</key>
+				<string>01A1D2A6-6D85-4B33-BB77-9420567F8BE6</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>2</string>
 				<key>uuid</key>
-				<string>536BB289-EDB4-491B-A79C-F8E9868392C9</string>
+				<string>4F4C72AA-44A6-4650-ABFA-D4F0B270FDE2</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>3</string>
+				<key>uuid</key>
+				<string>3CB19EC3-3C20-429A-8A84-CC2972F170B0</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>4</string>
+				<key>uuid</key>
+				<string>49AE0D38-9EA6-449F-9646-A63D2DA9C8E8</string>
 			</dict>
 		</array>
 		<key>CombinedMenubarDisplayMode</key>
@@ -55,13 +109,37 @@
 				<key>key</key>
 				<string>1</string>
 				<key>uuid</key>
-				<string>459E2C8E-F17A-4301-92AF-7DB99E113586</string>
+				<string>E73B8C6F-1FD9-4858-B93B-AC6D3B095037</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>2</string>
+				<key>uuid</key>
+				<string>E92402AD-0BC7-46A2-AA9B-5781AC318581</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>3</string>
+				<key>uuid</key>
+				<string>78C3380A-000A-43CD-AFA9-A660FC9FCD38</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>5</string>
+				<key>uuid</key>
+				<string>58A3055C-F53D-437D-854F-800561D5CBFF</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>6</string>
+				<key>uuid</key>
+				<string>133EDD88-DBBC-4B79-8FA3-F1CFC01EC72D</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>7</string>
 				<key>uuid</key>
-				<string>10629438-DF78-4418-A1DA-DAE8412F38AE</string>
+				<string>1D3F8146-7D3B-46C0-B33C-641F6054744D</string>
 			</dict>
 		</array>
 		<key>Diagnostics_Enabled</key>
@@ -79,8 +157,6 @@
 				<true/>
 				<key>key</key>
 				<string>6FC67859-5EC4-3E88-B947-9D9413240F6A</string>
-				<key>name</key>
-				<string>mac</string>
 			</dict>
 		</array>
 		<key>Disks_MenubarMode</key>
@@ -93,54 +169,7 @@
 			</dict>
 		</array>
 		<key>FanControl_Sets</key>
-		<array>
-			<dict>
-				<key>model</key>
-				<string>Macmini5,3</string>
-				<key>name</key>
-				<string>Medium</string>
-				<key>speeds</key>
-				<array>
-					<dict>
-						<key>fan</key>
-						<string>F0Ac</string>
-						<key>high</key>
-						<integer>5500</integer>
-						<key>low</key>
-						<integer>2300</integer>
-						<key>percentage</key>
-						<real>0.5</real>
-						<key>speed</key>
-						<integer>3900</integer>
-					</dict>
-				</array>
-				<key>uuid</key>
-				<string>6955A7BC-58A0-4ACF-B075-4DF66A4E8761</string>
-			</dict>
-			<dict>
-				<key>model</key>
-				<string>Macmini5,3</string>
-				<key>name</key>
-				<string>High</string>
-				<key>speeds</key>
-				<array>
-					<dict>
-						<key>fan</key>
-						<string>F0Ac</string>
-						<key>high</key>
-						<integer>5500</integer>
-						<key>low</key>
-						<integer>2300</integer>
-						<key>percentage</key>
-						<real>1</real>
-						<key>speed</key>
-						<integer>5500</integer>
-					</dict>
-				</array>
-				<key>uuid</key>
-				<string>4C56697B-DB6E-4238-B2AB-1A6133D69556</string>
-			</dict>
-		</array>
+		<array/>
 		<key>Memory_AppFormat</key>
 		<integer>0</integer>
 		<key>Memory_DisplayFormat</key>
@@ -159,7 +188,7 @@
 			</dict>
 		</array>
 		<key>MenubarSkinColor</key>
-		<integer>7</integer>
+		<integer>0</integer>
 		<key>MenubarSkinColor-Dark</key>
 		<integer>0</integer>
 		<key>MenubarSkinColor-Light</key>
@@ -174,6 +203,8 @@
 		<true/>
 		<key>Migrated_6.0</key>
 		<true/>
+		<key>Migrated_6.22</key>
+		<true/>
 		<key>Network_MenubarMode</key>
 		<array>
 			<dict>
@@ -183,6 +214,8 @@
 				<string>B8815EEA-A6A5-4C22-A1E2-A2EAEF051284</string>
 			</dict>
 		</array>
+		<key>Notifications-Enabled</key>
+		<false/>
 		<key>Notifications-Items</key>
 		<array>
 			<dict>
@@ -234,40 +267,138 @@
 				<string>10.00</string>
 			</dict>
 		</array>
+		<key>Sensors-Limits-Updated</key>
+		<true/>
 		<key>Sensors_MenubarMode</key>
 		<array>
 			<dict>
 				<key>key</key>
 				<string>0</string>
 				<key>uuid</key>
-				<string>6CCAD08E-A181-498D-99BC-3688B787222A</string>
+				<string>AC3D28B7-B402-4D8C-BBB1-06217DBF567C</string>
 			</dict>
 		</array>
 		<key>StatusItems-Order</key>
 		<array>
-			<integer>1</integer>
-			<integer>4</integer>
-			<integer>2</integer>
-			<integer>3</integer>
-			<integer>5</integer>
-			<integer>7</integer>
+			<integer>8</integer>
 		</array>
+		<key>Time_CalendarShowWeeks</key>
+		<integer>1</integer>
 		<key>Time_Cities</key>
 		<array>
-			<string>-6</string>
-			<string>-7</string>
-			<real>5809844</real>
-			<real>5128581</real>
-			<real>2643743</real>
+			<dict>
+				<key>city</key>
+				<string>Moon</string>
+				<key>city_plain</key>
+				<string></string>
+				<key>country</key>
+				<string></string>
+				<key>identifier</key>
+				<real>-6</real>
+				<key>latitude</key>
+				<real>0.0</real>
+				<key>longitude</key>
+				<real>0.0</real>
+				<key>population</key>
+				<real>99999999</real>
+				<key>state</key>
+				<string></string>
+				<key>timezone</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>Current Location</string>
+				<key>city_plain</key>
+				<string></string>
+				<key>country</key>
+				<string></string>
+				<key>identifier</key>
+				<real>-7</real>
+				<key>latitude</key>
+				<real>0.0</real>
+				<key>longitude</key>
+				<real>0.0</real>
+				<key>population</key>
+				<real>99999999</real>
+				<key>state</key>
+				<string></string>
+				<key>timezone</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>Seattle</string>
+				<key>city_plain</key>
+				<string></string>
+				<key>country</key>
+				<string>United States</string>
+				<key>identifier</key>
+				<real>5809844</real>
+				<key>latitude</key>
+				<real>47.606209999999997</real>
+				<key>longitude</key>
+				<real>-122.33207</real>
+				<key>population</key>
+				<real>684451</real>
+				<key>state</key>
+				<string>Washington</string>
+				<key>timezone</key>
+				<string>America/Los_Angeles</string>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>New York City</string>
+				<key>city_plain</key>
+				<string></string>
+				<key>country</key>
+				<string>United States</string>
+				<key>identifier</key>
+				<real>5128581</real>
+				<key>latitude</key>
+				<real>40.714269999999999</real>
+				<key>longitude</key>
+				<real>-74.005970000000005</real>
+				<key>population</key>
+				<real>8175133</real>
+				<key>state</key>
+				<string>New York</string>
+				<key>timezone</key>
+				<string>America/New_York</string>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>London</string>
+				<key>city_plain</key>
+				<string></string>
+				<key>country</key>
+				<string>United Kingdom</string>
+				<key>identifier</key>
+				<real>2643743</real>
+				<key>latitude</key>
+				<real>51.50853</real>
+				<key>longitude</key>
+				<real>-0.12573999999999999</real>
+				<key>population</key>
+				<real>7556900</real>
+				<key>state</key>
+				<string>England</string>
+				<key>timezone</key>
+				<string>Europe/London</string>
+			</dict>
 		</array>
 		<key>Time_DropdownFormat</key>
 		<array>
-			<string>EE</string>
+			<string>__RELATIVE_DAY__</string>
 			<string>' '</string>
 			<string>HH</string>
 			<string>':'</string>
 			<string>mm</string>
+			<string>' '</string>
+			<string>zzz</string>
 		</array>
+		<key>Time_EventsRange</key>
+		<integer>2</integer>
 		<key>Time_MenubarFormat</key>
 		<array>
 			<dict>
@@ -276,22 +407,37 @@
 					<array>
 						<string>' '</string>
 						<string>EE</string>
-						<string>' '</string>
+						<string>', '</string>
 						<string>MMM</string>
 						<string>' '</string>
-						<string>d</string>
-						<string>' '</string>
+						<string>M</string>
+					</array>
+					<array>
+						<string>'   '</string>
 						<string>HH</string>
 						<string>':'</string>
 						<string>mm</string>
+						<string>':'</string>
+						<string>ss</string>
 					</array>
 				</array>
+				<key>lines</key>
+				<integer>2</integer>
 			</dict>
 		</array>
 		<key>UpdateCheckerAutomaticDisabled</key>
 		<true/>
+		<key>Zarya-TLE</key>
+		<dict>
+			<key>time</key>
+			<real>1577810683.5659819</real>
+			<key>tle</key>
+			<string>ISS (ZARYA)             
+1 25544U 98067A   19024.69130787  .00000289  00000-0  11946-4 0  9991
+2 25544  51.6429 354.9058 0004630 308.2748  50.7575 15.53168972152956</string>
+		</dict>
 	</dict>
 	<key>version</key>
-	<real>6</real>
+	<string>6.40</string>
 </dict>
 </plist>
