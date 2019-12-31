@@ -26,10 +26,10 @@ indent_size = 2
 [*.{coffee,js,scss,css}]
 indent_size = 2
 
-[*.{rb,.html.erb}]
+[*.{rb,html.erb}]
 indent_size = 2
 
-[*.pu]
+[*.{pu,puml}]
 indent_size = 2
 
 [*.tex]
