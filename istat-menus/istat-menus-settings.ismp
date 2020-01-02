@@ -13,6 +13,25 @@
 	</dict>
 	<key>preferences</key>
 	<dict>
+		<key>Battery_DisableBluetooth</key>
+		<integer>0</integer>
+		<key>Battery_DropdownOrderDisabled</key>
+		<string></string>
+		<key>Battery_MenubarItems</key>
+		<array>
+			<dict>
+				<key>internal</key>
+				<true/>
+				<key>key</key>
+				<string>D869137B3FFH06FA9</string>
+				<key>name</key>
+				<string>Internal Battery</string>
+				<key>subtype</key>
+				<integer>-1</integer>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 		<key>Battery_MenubarMode</key>
 		<array>
 			<dict>
@@ -22,19 +41,34 @@
 				<string>66B27AB9-9E6E-4198-BA4A-47E83A65FF8A</string>
 			</dict>
 		</array>
+		<key>Battery_MenubarModeAirpods</key>
+		<array>
+			<dict>
+				<key>key</key>
+				<string>8</string>
+				<key>uuid</key>
+				<string>863C1674-2904-402F-BC1A-CE25F2F5EEFC</string>
+			</dict>
+			<dict>
+				<key>key</key>
+				<string>3</string>
+				<key>uuid</key>
+				<string>6E7B02E8-0B53-469F-8A1E-BEF03B582546</string>
+			</dict>
+		</array>
 		<key>Battery_MenubarModeBluetooth</key>
 		<array>
 			<dict>
 				<key>key</key>
 				<string>8</string>
 				<key>uuid</key>
-				<string>D6832386-6352-43F5-B179-93AC169020E0</string>
+				<string>8A46A69A-B2AA-4547-AA84-B15C5810BCC6</string>
 			</dict>
 			<dict>
 				<key>key</key>
-				<string>6</string>
+				<string>3</string>
 				<key>uuid</key>
-				<string>70921597-AADB-4AD3-A789-7236BF219F6A</string>
+				<string>EA244265-80B5-4881-9A61-538CECD49890</string>
 			</dict>
 		</array>
 		<key>CPU_AppFormat</key>
@@ -187,6 +221,8 @@
 				<string>5F8B6DCC-0542-4A37-AD87-671EA3152ED8</string>
 			</dict>
 		</array>
+		<key>MenubarGraphSize</key>
+		<integer>0</integer>
 		<key>MenubarSkinColor</key>
 		<integer>0</integer>
 		<key>MenubarSkinColor-Dark</key>
@@ -284,6 +320,10 @@
 		</array>
 		<key>Time_CalendarShowWeeks</key>
 		<integer>1</integer>
+		<key>Time_CalendarsDisabled</key>
+		<array>
+			<string>E328E089-A95E-4519-ABDD-2B4FF263780F</string>
+		</array>
 		<key>Time_Cities</key>
 		<array>
 			<dict>
@@ -397,6 +437,8 @@
 			<string>' '</string>
 			<string>zzz</string>
 		</array>
+		<key>Time_DropdownOrderDisabled</key>
+		<string></string>
 		<key>Time_EventsRange</key>
 		<integer>2</integer>
 		<key>Time_MenubarFormat</key>
@@ -410,7 +452,7 @@
 						<string>', '</string>
 						<string>MMM</string>
 						<string>' '</string>
-						<string>M</string>
+						<string>d</string>
 					</array>
 					<array>
 						<string>'   '</string>
@@ -430,7 +472,7 @@
 		<key>Zarya-TLE</key>
 		<dict>
 			<key>time</key>
-			<real>1577810683.5659819</real>
+			<real>1577897688.0368249</real>
 			<key>tle</key>
 			<string>ISS (ZARYA)             
 1 25544U 98067A   19024.69130787  .00000289  00000-0  11946-4 0  9991
