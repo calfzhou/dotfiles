@@ -322,6 +322,7 @@
 		<integer>1</integer>
 		<key>Time_CalendarsDisabled</key>
 		<array>
+			<string>655C2D8F-14D6-401D-B43E-7AC56FAAE941</string>
 			<string>E328E089-A95E-4519-ABDD-2B4FF263780F</string>
 		</array>
 		<key>Time_Cities</key>
@@ -455,7 +456,7 @@
 						<string>d</string>
 					</array>
 					<array>
-						<string>'   '</string>
+						<string>' '</string>
 						<string>HH</string>
 						<string>':'</string>
 						<string>mm</string>
@@ -472,7 +473,7 @@
 		<key>Zarya-TLE</key>
 		<dict>
 			<key>time</key>
-			<real>1577897688.0368249</real>
+			<real>1578016805.0102229</real>
 			<key>tle</key>
 			<string>ISS (ZARYA)             
 1 25544U 98067A   19024.69130787  .00000289  00000-0  11946-4 0  9991
