@@ -7,4 +7,5 @@
 ||amazonaws.com^
 ||cdn.segment.com^
 ||get-scatter.com^
-||reddit.com^
+||trello.com^
+||gettyimages.com^
