@@ -1,6 +1,5 @@
 [user]
-    name = Ji Zhou
-    email = calf.zhou@gmail.com
+    # Add user info in .gitconfig_custom
 
 [core]
     autocrlf = false
@@ -161,6 +160,6 @@
     cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
     trustExitCode = true
 
-# Conditional includes.
-# [includeIf "gitdir:~/myfolder/"]
-#     path = ~/myfolder/.gitconfig
+[include]
+    # Put custom configuration in `~/.gitconfig_custom`.
+    path = ~/.gitconfig_custom
