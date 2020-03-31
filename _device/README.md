@@ -1,1 +1,0 @@
-Device/system specified settings.
