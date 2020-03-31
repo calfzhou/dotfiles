@@ -1,10 +1,8 @@
-Sublime Text Configurations
-===========================
+# Sublime Text Configurations
 
-Usage
------
+## Usage
 
-### Mac ###
+### Mac
 
 ``` bash
 cd ~/Library/Application\ Support/Sublime\ Text/Packages/
@@ -12,8 +10,7 @@ rm -r User
 ln -s $DOTFILES_HOME/sublime-text/ User
 ```
 
-Information
------------
+## Information
 
 Check https://packagecontrol.io/installation for more information about Package Control.
 

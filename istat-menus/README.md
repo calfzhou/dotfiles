@@ -1,9 +1,7 @@
-iStat Menus
-===========
+# iStat Menus
 
 http://bjango.com/mac/istatmenus/
 
-Usage
------
+## Usage
 
 Import settings in iStat Menus.

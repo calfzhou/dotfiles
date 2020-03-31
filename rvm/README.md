@@ -1,16 +1,8 @@
-RVM Configurations
-==================
+# RVM Configurations
 
-Usage
------
+## Usage
 
-### Mac and Linux ###
-
-```shell
+``` bash
 cd ~
 ln -s $DOTFILES_HOME/rvm/rvmrc .rvmrc
 ```
-
-### Windows ###
-
-TODO

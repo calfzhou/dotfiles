@@ -1,16 +1,8 @@
-EditorConfig
-============
+# EditorConfig
 
-Usage
------
+## Usage
 
-### Mac and Linux ###
-
-```shell
+``` bash
 cd ~
 ln -s $DOTFILES_HOME/editor-config/editorconfig .editorconfig
 ```
-
-### Windows ###
-
-... to be continued
