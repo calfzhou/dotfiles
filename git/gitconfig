@@ -96,6 +96,14 @@
     branches = branch -a
     remotes = remote -v
 
+    # Sync current branch from given remote to origin.
+    # Use this command in a forked clone.
+    # Example: `git sync [upstream]`
+    sync = "!r=${1:-upstream} && git fetch \"$r\" --prune && git rebase \"$r/$(git rev-parse --abbrev-ref HEAD)\" && git push"
+
+    # List all aliases.
+    alias = "!git config --get-regexp '^alias\\.' | sed -e 's/^alias\\.//' -e 's/\\ /\\ =\\ /'"
+
     # Amend the currently staged files to the latest commit
     amend = commit --amend --reuse-message=HEAD
 
