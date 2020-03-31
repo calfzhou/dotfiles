@@ -98,10 +98,12 @@
     # Sync current branch from given remote to origin.
     # Use this command in a forked clone.
     # Example: `git sync [upstream]`
-    sync = "!r=${1:-upstream} && git fetch \"$r\" --prune && git rebase \"$r/$(git rev-parse --abbrev-ref HEAD)\" && git push"
+    sync = !r="${1:-upstream}" && git fetch "$r" --prune && git rebase "$r/$(git rev-parse --abbrev-ref HEAD)" && git push
 
-    # List all aliases.
-    alias = "!git config --get-regexp '^alias\\.' | sed -e 's/^alias\\.//' -e 's/\\ /\\ =\\ /'"
+    # Show given alias detail or list all aliases.
+    # Example: `git alias` - list all aliases.
+    # Example: `git alias st` - show current definition of `alias.st`.
+    alias = ![[ ! -z "$1" ]] && git config --get alias."$1" || git config --get-regexp '^alias\\.' | sed -e 's/^alias\\.//' -e 's/\\ /\\ =\\ /'
 
     # Amend the currently staged files to the latest commit
     amend = commit --amend --reuse-message=HEAD
