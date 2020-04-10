@@ -22,7 +22,7 @@ Here the backup of configuration file SwitchyOptions.bak encoded in base64, and 
   2. To easily track the modifications, use the following command to decode the backup file to well-formatted JSON file.
 
   ``` bash
-  python ./ss_convert.py SwitchyOptions.bak switchy_options.json
+  python2 ss_convert.py SwitchyOptions.bak switchy_options.json
   # or
-  python ./clean_omega.py OmegaOptions.bak omega_options.json
+  python2 clean_omega.py OmegaOptions.bak omega_options.json
   ```
