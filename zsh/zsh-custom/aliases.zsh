@@ -123,3 +123,6 @@ alias json2yaml='ruby -ryaml -rjson -e "puts YAML.dump(JSON.parse(STDIN.read))"'
 
 # Generate UUID
 alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
+
+# SSH via socks 5 proxy
+alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1086 %h %p'"
