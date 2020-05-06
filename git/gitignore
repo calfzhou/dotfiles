@@ -611,3 +611,8 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/vim,xcode,linux,macos,windows,jetbrains,sublimetext,visualstudio,visualstudiocode
+
+
+### CUSTOMIZED ###
+# Ignore this due to absolute pythonpath
+.vscode/settings.json
