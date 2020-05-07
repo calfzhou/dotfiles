@@ -37,3 +37,6 @@
 [submodule "zsh/zsh-custom/plugins/zsh-syntax-highlighting"]
 	path = zsh/zsh-custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "zsh/zsh-custom/plugins/zsh-nvm"]
+	path = zsh/zsh-custom/plugins/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm.git

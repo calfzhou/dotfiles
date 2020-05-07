@@ -70,6 +70,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM="$HOME/.zsh-custom"
 
+# Let zsh-nvm plugin auto load `.nvmrc` file
+export NVM_AUTO_USE=true;
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -80,6 +83,7 @@ plugins=(
     virtualenv
     virtualenvwrapper
     zsh-autosuggestions
+    zsh-nvm
     zsh-syntax-highlighting
 )
 
