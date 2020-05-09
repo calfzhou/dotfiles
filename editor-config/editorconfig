@@ -40,3 +40,6 @@ end_of_line = crlf
 
 [*.{h,c,cpp,hpp}]
 indent_size = 2
+
+[*.journal]
+indent_size = 2
