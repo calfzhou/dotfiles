@@ -6,6 +6,11 @@ GUN_HOME="/usr/local/opt/coreutils/libexec"
 [[ -d "$GUN_HOME/gnubin" ]] && PATH="$GUN_HOME/gnubin:$PATH"
 [[ -d "$GUN_HOME/gnuman" ]] && MANPATH="$GUN_HOME/gnuman:$MANPATH"
 
+# Add GNU grep bin and man
+GREP_HOME="/usr/local/opt/grep/libexec"
+[[ -d "$GREP_HOME/gnubin" ]] && PATH="$GREP_HOME/gnubin:$PATH"
+[[ -d "$GREP_HOME/gnuman" ]] && MANPATH="$GREP_HOME/gnuman:$MANPATH"
+
 # Phabricator's Arcanist
 ARC_HOME="$HOME/tools/arcanist"
 [[ -d "$ARC_HOME/bin" ]] && PATH="$ARC_HOME/bin:$PATH"
