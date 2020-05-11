@@ -22,10 +22,10 @@ prompt_git() {
     local branchName='';
 
     # Check if the current directory is in a Git repository.
-    if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == '0' ]; then
+    if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") = '0' ]; then
 
         # check if the current directory is in .git before running git checks
-        if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == 'false' ]; then
+        if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" = 'false' ]; then
 
             # Ensure the index is up to date.
             git update-index --really-refresh -q &>/dev/null;
