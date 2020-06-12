@@ -1,11 +1,17 @@
 ! Put user rules line by line in this file.
 ! See https://adblockplus.org/en/filter-cheatsheet
-||cloudfront.net^
+||alfredforum.com^
+||amazonaws.com^
+||apps.apple.com^
 ||atlassian.com^
 ||balsamiq.com^
+||cloudfront.net^
 ||discourse-cdn-sjc1.com^
-||amazonaws.com^
-||cdn.segment.com^
+||flutter.dev^
 ||get-scatter.com^
-||trello.com^
 ||gettyimages.com^
+||hledger.org^
+||cloud.linode.com^
+||cdn.segment.com^
+||trello.com^
+||v2fly.org^
