@@ -10,6 +10,7 @@
 ||flutter.dev^
 ||get-scatter.com^
 ||gettyimages.com^
+||githubusercontent.com^
 ||hledger.org^
 ||cloud.linode.com^
 ||cdn.segment.com^
