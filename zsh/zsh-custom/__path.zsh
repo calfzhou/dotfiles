@@ -21,7 +21,7 @@ COMPOSER_HOME="$HOME/.composer"
 [[ -d "$COMPOSER_HOME/vendor/bin" ]] && PATH="$COMPOSER_HOME/vendor/bin:$PATH"
 
 # Laravel Valet
-[[ -d "~/.composer/vendor/bin" ]] && PATH="~/.composer/vendor/bin:$PATH"
+[[ -d "$HOME/.composer/vendor/bin" ]] && PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Unversioned Python
 [[ -d "/usr/local/opt/python/libexec/bin" ]] && PATH="/usr/local/opt/python/libexec/bin:$PATH"
@@ -36,6 +36,9 @@ RVM_HOME="$HOME/.rvm"
 NVM_DIR="$HOME/.nvm"
 [[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
 [[ -r "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
+
+# GVM
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # Git encrypt
 [[ -d "$HOME/tools/git-encrypt" ]] && PATH="$HOME/tools/git-encrypt:$PATH"
