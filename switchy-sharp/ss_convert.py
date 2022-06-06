@@ -1,44 +1,31 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+#!/usr/bin/env python3
 import argparse
+import base64
 import json
 import sys
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 
 
 def encode_switchy_sharp(json_text):
-    """
-    :type json_text: string
-    :rtype string
-    """
-    data = json.loads(json_text, encoding='utf-8')
-    raw_data = {key: json.dumps(value, encoding='utf-8', sort_keys=True) for key, value in data.iteritems()}
-    raw_json_text = json.dumps(raw_data, encoding='utf-8', sort_keys=True)
+    data = json.loads(json_text)
+    raw_data = {key: json.dumps(value, sort_keys=True) for key, value in data.iteritems()}
+    raw_json_text = json.dumps(raw_data, sort_keys=True)
     return raw_json_text.encode('base64')
 
 
 def decode_switchy_sharp(backup_text):
-    """
-    :type backup_text: string
-    :rtype string
-    """
-    raw_json_text = backup_text.decode('base64')
-    raw_data = json.loads(raw_json_text, encoding='utf-8')
-    data = {key: json.loads(value, encoding='utf-8') for key, value in raw_data.iteritems()}
+    raw_json_text = base64.b64decode(backup_text)
+    raw_data = json.loads(raw_json_text)
+    data = {key: json.loads(value) for key, value in raw_data.items()}
     return '{}\n'.format(
         json.dumps(data, indent=4, separators=(',', ': '), sort_keys=True)
     )
 
 
 def _guess_if_json(text):
-    """
-    :type text: string
-    :rtype bool
-    """
     try:
-        json.loads(text, encoding='utf-8')
+        json.loads(text)
         return True
     except ValueError:
         return False
@@ -59,8 +46,7 @@ def main():
     group.add_argument('-d', '--decode', action='store_true',
                        help='force run decoding process (by default it is auto determined by input content)')
 
-    unicode_args = map(lambda s: unicode(s, sys.getfilesystemencoding()), sys.argv)
-    args = parser.parse_args(unicode_args[1:])
+    args = parser.parse_args()
 
     try:
         input_text = args.in_file.read()
