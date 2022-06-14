@@ -28,6 +28,12 @@ parsers: # array
   - reg: .+$
     yaml: # Set custom rule providers and rules.
       mix-rule-providers:
+        custom:
+          type: http
+          behavior: domain
+          url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom.yaml
+          path: ./ruleset/custom.yaml
+          interval: 86400
         gfw:
           type: http
           behavior: domain
@@ -59,6 +65,7 @@ parsers: # array
           path: ./ruleset/tld-not-cn.yaml
           interval: 86400
       append-rules:
+        - RULE-SET,custom,PROXY
         - RULE-SET,private,DIRECT
         - RULE-SET,tld-not-cn,PROXY
         - RULE-SET,gfw,PROXY
