@@ -1,0 +1,67 @@
+parsers: # array
+  - reg: https://2000w.xyz/.+$
+    yaml:
+      append-proxy-groups:
+        - name: PROXY # Define PROXY proxy group.
+          type: select
+          proxies:
+            - CroLAX
+      commands:
+        # Remove not-proxy items.
+        - proxies.-1-
+        - proxies.-1-
+        - proxies.-1-
+        - proxy-groups.0.proxies.-1-
+        - proxy-groups.0.proxies.-1-
+        - proxy-groups.0.proxies.-1-
+  - reg: https://www.gocalf.com/.+$
+    yaml:
+      append-proxy-groups:
+        - name: PROXY # Define PROXY proxy group.
+          type: select
+          proxies:
+            - gocalf-vmess
+  - reg: .+$
+    yaml:
+      commands:
+        - rules- # Remove all existing rules.
+  - reg: .+$
+    yaml: # Set custom rule providers and rules.
+      mix-rule-providers:
+        gfw:
+          type: http
+          behavior: domain
+          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+          path: ./ruleset/gfw.yaml
+          interval: 86400
+        greatfire:
+          type: http
+          behavior: domain
+          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt"
+          path: ./ruleset/greatfire.yaml
+          interval: 86400
+        private:
+          type: http
+          behavior: domain
+          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+          path: ./ruleset/private.yaml
+          interval: 86400
+        telegramcidr:
+          type: http
+          behavior: ipcidr
+          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+          path: ./ruleset/telegramcidr.yaml
+          interval: 86400
+        tld-not-cn:
+          type: http
+          behavior: domain
+          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+          path: ./ruleset/tld-not-cn.yaml
+          interval: 86400
+      append-rules:
+        - RULE-SET,private,DIRECT
+        - RULE-SET,tld-not-cn,PROXY
+        - RULE-SET,gfw,PROXY
+        - RULE-SET,greatfire,PROXY
+        - RULE-SET,telegramcidr,PROXY
+        - MATCH,DIRECT
