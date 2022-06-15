@@ -1,29 +1,45 @@
 parsers: # array
-  - reg: https://2000w.xyz/.+$
+  - reg: ^https://2000w.xyz/.+$
+    code: |
+      module.exports.parse = (raw, { yaml }) => {
+        const obj = yaml.parse(raw)
+
+        // Remove not-proxy items.
+        obj.proxies = obj.proxies.filter(p => !p.name.startsWith('(勿选)'))
+        obj['proxy-groups'][0].proxies = obj['proxy-groups'][0].proxies.filter(p => !p.startsWith('(勿选)'))
+
+        // Create a url-test proxy group.
+        const autoGroup = {
+          name: 'CroLAX-Auto',
+          type: 'url-test',
+          url: 'http://www.gstatic.com/generate_204',
+          interval: 600,
+          tolerance: 200,
+          proxies: obj['proxy-groups'][0]['proxies'],
+        }
+        obj['proxy-groups'].push(autoGroup)
+
+        return yaml.stringify(obj)
+      }
     yaml:
       append-proxy-groups:
         - name: PROXY # Define PROXY proxy group.
           type: select
           proxies:
             - CroLAX
+            - CroLAX-Auto
       commands:
-        # Remove not-proxy items.
-        - proxies.-1-
-        - proxies.-1-
-        - proxies.-1-
-        - proxy-groups.0.proxies.-1-
-        - proxy-groups.0.proxies.-1-
-        - proxy-groups.0.proxies.-1-
-        # Remove all existing rules.
-        - rules-
-  - reg: https://www.gocalf.com/.+$
+        - rules- # Remove all existing rules.
+  - reg: ^https://www.gocalf.com/.+$
     yaml:
       append-proxy-groups:
         - name: PROXY # Define PROXY proxy group.
           type: select
           proxies:
             - gocalf-vmess
-  - reg: https://.+$
+      commands:
+        - rules- # Remove all existing rules.
+  - reg: ^https://.+$
     yaml: # Set custom rule providers and rules.
       mix-rule-providers:
         custom-direct:
