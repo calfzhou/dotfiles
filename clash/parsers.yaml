@@ -21,24 +21,24 @@ parsers: # array
           type: select
           proxies:
             - gocalf-vmess
-  - reg: .+$
+  - reg: https://.+$
     yaml:
       commands:
         - rules- # Remove all existing rules.
-  - reg: .+$
+  - reg: https://.+$
     yaml: # Set custom rule providers and rules.
       mix-rule-providers:
-        custom-proxy:
-          type: http
-          behavior: domain
-          url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-proxy.yaml
-          path: ./ruleset/custom-proxy.yaml
-          interval: 86400
         custom-direct:
           type: http
           behavior: domain
           url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-direct.yaml
           path: ./ruleset/custom-direct.yaml
+          interval: 86400
+        custom-proxy:
+          type: http
+          behavior: domain
+          url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-proxy.yaml
+          path: ./ruleset/custom-proxy.yaml
           interval: 86400
         gfw:
           type: http
