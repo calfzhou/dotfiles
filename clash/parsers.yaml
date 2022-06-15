@@ -14,6 +14,8 @@ parsers: # array
         - proxy-groups.0.proxies.-1-
         - proxy-groups.0.proxies.-1-
         - proxy-groups.0.proxies.-1-
+        # Remove all existing rules.
+        - rules-
   - reg: https://www.gocalf.com/.+$
     yaml:
       append-proxy-groups:
@@ -21,10 +23,6 @@ parsers: # array
           type: select
           proxies:
             - gocalf-vmess
-  - reg: https://.+$
-    yaml:
-      commands:
-        - rules- # Remove all existing rules.
   - reg: https://.+$
     yaml: # Set custom rule providers and rules.
       mix-rule-providers:
