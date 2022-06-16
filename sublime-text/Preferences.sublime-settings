@@ -1,6 +1,6 @@
 {
 	"atomic_save": true,
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"default_line_ending": "unix",
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
@@ -22,7 +22,6 @@
 	],
 	"scroll_past_end": true,
 	"spell_check": true,
-	"theme": "Solarized Space Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
