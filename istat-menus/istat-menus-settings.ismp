@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<string>1116</string>
+	<string>1194</string>
 	<key>license</key>
 	<dict>
 		<key>email</key>
@@ -87,9 +87,9 @@
 		<array>
 			<dict>
 				<key>key</key>
-				<string>6</string>
+				<string>1</string>
 				<key>uuid</key>
-				<string>A915AA47-5A41-404C-B259-C26A79905E58</string>
+				<string>B4390DDC-842D-41C2-8F60-4DFC5FFDB70F</string>
 			</dict>
 		</array>
 		<key>CombinedDropdownDisplayMode</key>
@@ -143,37 +143,37 @@
 				<key>key</key>
 				<string>1</string>
 				<key>uuid</key>
-				<string>E73B8C6F-1FD9-4858-B93B-AC6D3B095037</string>
+				<string>4DC3E5E3-8B9A-4F68-986F-0BE9E753C29F</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>2</string>
 				<key>uuid</key>
-				<string>E92402AD-0BC7-46A2-AA9B-5781AC318581</string>
+				<string>48BA7C2E-CD0D-4A9F-875E-6040819A3B0E</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>3</string>
 				<key>uuid</key>
-				<string>78C3380A-000A-43CD-AFA9-A660FC9FCD38</string>
+				<string>4B2C8D7E-EDA6-44C4-93C9-FACFF5FE1412</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>5</string>
 				<key>uuid</key>
-				<string>58A3055C-F53D-437D-854F-800561D5CBFF</string>
+				<string>FEA74AD7-11B9-4390-AF5F-12819DB6F41C</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>6</string>
 				<key>uuid</key>
-				<string>133EDD88-DBBC-4B79-8FA3-F1CFC01EC72D</string>
+				<string>17D195BC-5B80-478D-982A-2A13EC592902</string>
 			</dict>
 			<dict>
 				<key>key</key>
 				<string>7</string>
 				<key>uuid</key>
-				<string>1D3F8146-7D3B-46C0-B33C-641F6054744D</string>
+				<string>A463FA2D-BB55-451E-A222-9264CCD29395</string>
 			</dict>
 		</array>
 		<key>Diagnostics_Enabled</key>
@@ -190,7 +190,9 @@
 				<key>boot</key>
 				<true/>
 				<key>key</key>
-				<string>6FC67859-5EC4-3E88-B947-9D9413240F6A</string>
+				<string>0D5F1A05-9D6B-402D-822B-932597AD01B7</string>
+				<key>name</key>
+				<string>Macintosh HD - Data</string>
 			</dict>
 		</array>
 		<key>Disks_MenubarMode</key>
@@ -221,14 +223,18 @@
 				<string>5F8B6DCC-0542-4A37-AD87-671EA3152ED8</string>
 			</dict>
 		</array>
+		<key>Menubar-DetectedColor</key>
+		<string>0.00 0.00 0.00 0.85</string>
+		<key>MenubarGraphOpacity-Dark</key>
+		<real>1</real>
 		<key>MenubarGraphSize</key>
 		<integer>0</integer>
 		<key>MenubarSkinColor</key>
 		<integer>0</integer>
 		<key>MenubarSkinColor-Dark</key>
-		<integer>0</integer>
+		<integer>9</integer>
 		<key>MenubarSkinColor-Light</key>
-		<integer>0</integer>
+		<integer>3</integer>
 		<key>MenubarTheme</key>
 		<integer>0</integer>
 		<key>MigratedExtras_5.0</key>
@@ -240,6 +246,10 @@
 		<key>Migrated_6.0</key>
 		<true/>
 		<key>Migrated_6.22</key>
+		<true/>
+		<key>Migrated_6.5</key>
+		<true/>
+		<key>Migrated_6.52</key>
 		<true/>
 		<key>Network_MenubarMode</key>
 		<array>
@@ -311,13 +321,15 @@
 				<key>key</key>
 				<string>0</string>
 				<key>uuid</key>
-				<string>AC3D28B7-B402-4D8C-BBB1-06217DBF567C</string>
+				<string>215284C8-ED49-4974-ABAE-EF7C5FA6704A</string>
 			</dict>
 		</array>
 		<key>StatusItems-Order</key>
 		<array>
 			<integer>8</integer>
 		</array>
+		<key>Theme-SeperateStyles</key>
+		<true/>
 		<key>Time_CalendarShowWeeks</key>
 		<integer>1</integer>
 		<key>Time_CalendarsDisabled</key>
@@ -330,8 +342,6 @@
 			<dict>
 				<key>city</key>
 				<string>Moon</string>
-				<key>city_plain</key>
-				<string></string>
 				<key>country</key>
 				<string></string>
 				<key>identifier</key>
@@ -340,8 +350,6 @@
 				<real>0.0</real>
 				<key>longitude</key>
 				<real>0.0</real>
-				<key>population</key>
-				<real>99999999</real>
 				<key>state</key>
 				<string></string>
 				<key>timezone</key>
@@ -349,9 +357,23 @@
 			</dict>
 			<dict>
 				<key>city</key>
-				<string>Current Location</string>
-				<key>city_plain</key>
+				<string>UTC</string>
+				<key>country</key>
 				<string></string>
+				<key>identifier</key>
+				<integer>-5</integer>
+				<key>latitude</key>
+				<integer>0</integer>
+				<key>longitude</key>
+				<real>51.479100000000003</real>
+				<key>state</key>
+				<string></string>
+				<key>timezone</key>
+				<string>UTC</string>
+			</dict>
+			<dict>
+				<key>city</key>
+				<string>Current Location</string>
 				<key>country</key>
 				<string></string>
 				<key>identifier</key>
@@ -360,8 +382,6 @@
 				<real>0.0</real>
 				<key>longitude</key>
 				<real>0.0</real>
-				<key>population</key>
-				<real>99999999</real>
 				<key>state</key>
 				<string></string>
 				<key>timezone</key>
@@ -370,8 +390,6 @@
 			<dict>
 				<key>city</key>
 				<string>Seattle</string>
-				<key>city_plain</key>
-				<string></string>
 				<key>country</key>
 				<string>United States</string>
 				<key>identifier</key>
@@ -380,8 +398,6 @@
 				<real>47.606209999999997</real>
 				<key>longitude</key>
 				<real>-122.33207</real>
-				<key>population</key>
-				<real>684451</real>
 				<key>state</key>
 				<string>Washington</string>
 				<key>timezone</key>
@@ -390,8 +406,6 @@
 			<dict>
 				<key>city</key>
 				<string>New York City</string>
-				<key>city_plain</key>
-				<string></string>
 				<key>country</key>
 				<string>United States</string>
 				<key>identifier</key>
@@ -400,8 +414,6 @@
 				<real>40.714269999999999</real>
 				<key>longitude</key>
 				<real>-74.005970000000005</real>
-				<key>population</key>
-				<real>8175133</real>
 				<key>state</key>
 				<string>New York</string>
 				<key>timezone</key>
@@ -410,8 +422,6 @@
 			<dict>
 				<key>city</key>
 				<string>London</string>
-				<key>city_plain</key>
-				<string></string>
 				<key>country</key>
 				<string>United Kingdom</string>
 				<key>identifier</key>
@@ -420,8 +430,6 @@
 				<real>51.50853</real>
 				<key>longitude</key>
 				<real>-0.12573999999999999</real>
-				<key>population</key>
-				<real>7556900</real>
 				<key>state</key>
 				<string>England</string>
 				<key>timezone</key>
@@ -468,19 +476,36 @@
 				<integer>2</integer>
 			</dict>
 		</array>
+		<key>TimerFrequency</key>
+		<integer>2</integer>
 		<key>UpdateCheckerAutomaticDisabled</key>
 		<true/>
+		<key>Weather_MenubarMode</key>
+		<array>
+			<dict>
+				<key>mode</key>
+				<integer>2</integer>
+				<key>uuid</key>
+				<string>D4A3C0BC-EBC1-425F-9963-CCAE1453B9F4</string>
+			</dict>
+			<dict>
+				<key>mode</key>
+				<integer>0</integer>
+				<key>uuid</key>
+				<string>ADA71E94-2F50-490B-9BB0-693EA60F919F</string>
+			</dict>
+		</array>
 		<key>Zarya-TLE</key>
 		<dict>
 			<key>time</key>
-			<real>1578016805.0102229</real>
+			<real>1655358242.365175</real>
 			<key>tle</key>
 			<string>ISS (ZARYA)             
-1 25544U 98067A   19024.69130787  .00000289  00000-0  11946-4 0  9991
-2 25544  51.6429 354.9058 0004630 308.2748  50.7575 15.53168972152956</string>
+1 25544U 98067A   22166.98291539  .00007389  00000+0  13721-3 0  9996
+2 25544  51.6447 342.5501 0004194 242.9750 255.0959 15.50021518344998</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>6.40</string>
+	<string>6.62</string>
 </dict>
 </plist>
