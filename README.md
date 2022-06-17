@@ -13,6 +13,8 @@ This repo contains several submodules, to make it simple, use `git clone --recur
 
 Otherwise, use `git submodule init` and `git submodule update` after a normal clone.
 
+To update all submodules, run `git submodule foreach git pull`.
+
 ## General Usage
 
 Generally speaking, to use these configurations, just create symbol links from
