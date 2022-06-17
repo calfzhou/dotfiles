@@ -43,47 +43,47 @@ parsers: # array
     yaml: # Set custom rule providers and rules.
       mix-rule-providers:
         custom-direct:
-          type: http
           behavior: domain
+          type: http
           url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-direct.yaml
-          path: ./ruleset/custom-direct.yaml
           interval: 86400
+          path: ./ruleset/custom-direct.yaml
         custom-proxy:
-          type: http
           behavior: domain
+          type: http
           url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-proxy.yaml
           path: ./ruleset/custom-proxy.yaml
           interval: 86400
         gfw:
-          type: http
           behavior: domain
+          type: http
           url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+          interval: 86400
           path: ./ruleset/gfw.yaml
-          interval: 86400
         greatfire:
-          type: http
           behavior: domain
+          type: http
           url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt"
+          interval: 86400
           path: ./ruleset/greatfire.yaml
-          interval: 86400
         private:
-          type: http
           behavior: domain
+          type: http
           url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+          interval: 86400
           path: ./ruleset/private.yaml
-          interval: 86400
         telegramcidr:
-          type: http
           behavior: ipcidr
-          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
-          path: ./ruleset/telegramcidr.yaml
-          interval: 86400
-        tld-not-cn:
           type: http
-          behavior: domain
-          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
-          path: ./ruleset/tld-not-cn.yaml
+          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
           interval: 86400
+          path: ./ruleset/telegramcidr.yaml
+        tld-not-cn:
+          behavior: domain
+          type: http
+          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+          interval: 86400
+          path: ./ruleset/tld-not-cn.yaml
       append-rules:
         - DOMAIN,raw.githubusercontent.com,PROXY
         - RULE-SET,custom-proxy,PROXY
