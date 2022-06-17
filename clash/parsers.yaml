@@ -43,13 +43,13 @@ parsers: # array
     yaml: # Set custom rule providers and rules.
       mix-rule-providers:
         custom-direct:
-          behavior: domain
+          behavior: classical
           type: http
           url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-direct.yaml
           interval: 86400
           path: ./ruleset/custom-direct.yaml
         custom-proxy:
-          behavior: domain
+          behavior: classical
           type: http
           url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-proxy.yaml
           path: ./ruleset/custom-proxy.yaml
