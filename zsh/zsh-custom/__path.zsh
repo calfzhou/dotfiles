@@ -24,7 +24,7 @@ COMPOSER_HOME="$HOME/.composer"
 [[ -d "$HOME/.composer/vendor/bin" ]] && PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Unversioned Python
-[[ -d "/usr/local/opt/python/libexec/bin" ]] && PATH="/usr/local/opt/python/libexec/bin:$PATH"
+# [[ -d "/usr/local/opt/python/libexec/bin" ]] && PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # RVM
 RVM_HOME="$HOME/.rvm"
@@ -44,9 +44,12 @@ NVM_DIR="$HOME/.nvm"
 [[ -d "$HOME/tools/git-encrypt" ]] && PATH="$HOME/tools/git-encrypt:$PATH"
 
 # Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-eval "$(pyenv init -)"
-eval "$(pyenv init --path)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# if command -v pyenv &>/dev/null; then
+#     eval "$(pyenv init -)"
+#     eval "$(pyenv init --path)"
+#     # pyenv virtualenvwrapper
+# fi
 
 export PATH
 export MANPATH

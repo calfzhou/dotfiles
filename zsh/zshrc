@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 
 # Path to your oh-my-zsh installation.
@@ -73,15 +73,22 @@ ZSH_CUSTOM="$HOME/.zsh-custom"
 # Let zsh-nvm plugin auto load `.nvmrc` file
 export NVM_AUTO_USE=true;
 
+# Plugins are loaded before custom configurations, so prepare pyenv here.
+export PYENV_ROOT="$HOME/.pyenv"
+if command -v pyenv &>/dev/null; then
+    eval "$(pyenv init --path)"
+fi
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    pyenv # The plugin will load pyenv-virtualenv.
     sudo
-    virtualenv
-    virtualenvwrapper
+    # virtualenv
+    # virtualenvwrapper
     zsh-autosuggestions
     zsh-nvm
     zsh-syntax-highlighting
