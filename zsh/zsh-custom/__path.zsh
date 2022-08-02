@@ -43,5 +43,10 @@ NVM_DIR="$HOME/.nvm"
 # Git encrypt
 [[ -d "$HOME/tools/git-encrypt" ]] && PATH="$HOME/tools/git-encrypt:$PATH"
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
+
 export PATH
 export MANPATH
