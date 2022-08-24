@@ -262,3 +262,16 @@ function tre() {
 function gi() {
     curl -L -s "https://www.gitignore.io/api/$@"
 }
+
+# Sleep until the specified time. E.g.:
+# sleepuntil 21:00
+# sleepuntil tomorrow 10:00
+function sleepuntil {
+    local seconds=$(( $(date -d "$*" +%s) - $(date +%s) )) # Use $* to eliminate need for quotes
+    if (( seconds > 0 )); then
+        echo Sleeping for $seconds seconds until $(date -d "$*")
+        sleep $seconds
+    else
+        echo $(date -d "$*") alread passed
+    fi
+}
