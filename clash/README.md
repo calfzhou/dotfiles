@@ -26,3 +26,5 @@
 ## 关于 rule-providers 加载问题
 
 由于 rule providers 的 [获取逻辑](https://github.com/Dreamacro/clash/issues/1385)，有可能会 [因为无法成功下载 rule provider 文件而导致 profile 无法被选中](https://github.com/Fndroid/clash_for_windows_pkg/issues/3101)，可以手动把 [ruleset](./ruleset) 目录中的文件复制到 CFW home 目录下的 ruleset 目录中，确保 profile 能被选中，之后就可以自动定时更新 rule provider 内容。
+
+2023-01-28 上面这段可能在当前版本下无效了，目前 rule providers 会被保存在 ./providers/rule/ 目录下，自动命名，`path` 配置不起作用。
