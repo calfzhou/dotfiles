@@ -2,4 +2,4 @@ payload:
   - DOMAIN-SUFFIX,abcnotation.com
   - DOMAIN-SUFFIX,discourse-cdn.com
   - DOMAIN-SUFFIX,hledger.org
-  - DOMAIN-SUFFIX,jp1lib.org # z-lib
+  - DOMAIN-SUFFIX,singlelogin.me # z-lib
