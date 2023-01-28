@@ -45,43 +45,43 @@ parsers: # array
         custom-direct:
           behavior: classical
           type: http
-          url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-direct.yaml
+          url: https://cdn.jsdelivr.net/gh/calfzhou/dotfiles@master/clash/ruleset/custom-direct.yaml
           interval: 86400
           path: ./ruleset/custom-direct.yaml
         custom-proxy:
           behavior: classical
           type: http
-          url: https://raw.githubusercontent.com/calfzhou/dotfiles/master/clash/ruleset/custom-proxy.yaml
+          url: https://cdn.jsdelivr.net/gh/calfzhou/dotfiles@master/clash/ruleset/custom-proxy.yaml
           path: ./ruleset/custom-proxy.yaml
           interval: 86400
         gfw:
           behavior: domain
           type: http
-          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+          url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
           interval: 86400
           path: ./ruleset/gfw.yaml
         greatfire:
           behavior: domain
           type: http
-          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt"
+          url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
           interval: 86400
           path: ./ruleset/greatfire.yaml
         private:
           behavior: domain
           type: http
-          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt"
+          url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
           interval: 86400
           path: ./ruleset/private.yaml
         telegramcidr:
           behavior: ipcidr
           type: http
-          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+          url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
           interval: 86400
           path: ./ruleset/telegramcidr.yaml
         tld-not-cn:
           behavior: domain
           type: http
-          url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+          url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
           interval: 86400
           path: ./ruleset/tld-not-cn.yaml
       append-rules:
