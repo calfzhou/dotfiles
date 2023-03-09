@@ -19,6 +19,19 @@ parsers: # array
         }
         obj['proxy-groups'].push(autoGroup)
 
+        // Create a ChatGPT-friendly proxy group.
+        const chatGroup = {
+          name: 'ChatGPT',
+          type: 'url-test',
+          url: 'http://www.gstatic.com/generate_204',
+          interval: 600,
+          tolerance: 200,
+          proxies: obj['proxy-groups'][0]['proxies'].filter(
+            p => p.startsWith('V2-US') || p.startsWith('V2-HK')
+          ),
+        }
+        obj['proxy-groups'].push(chatGroup)
+
         return yaml.stringify(obj)
       }
     yaml:
@@ -28,11 +41,16 @@ parsers: # array
           proxies:
             - CroLAX
             - CroLAX-Auto
+            - ChatGPT
       commands:
         - rules- # Remove all existing rules.
   - reg: ^https://www.gocalf.com/.+$
     yaml:
       append-proxy-groups:
+        - name: ChatGPT # Define ChatGPT-friendly proxy group.
+          type: select
+          proxies:
+            - gocalf-vmess
         - name: PROXY # Define PROXY proxy group.
           type: select
           proxies:
@@ -85,6 +103,8 @@ parsers: # array
           interval: 86400
           path: ./ruleset/tld-not-cn.yaml
       append-rules:
+        - PROCESS-NAME,chatgpt,ChatGPT # This doesn't work now.
+        - DOMAIN-SUFFIX,chat.openai.com,ChatGPT
         - DOMAIN,raw.githubusercontent.com,PROXY
         - RULE-SET,custom-proxy,PROXY
         - RULE-SET,custom-direct,DIRECT
