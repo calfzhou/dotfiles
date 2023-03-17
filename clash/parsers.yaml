@@ -27,7 +27,7 @@ parsers: # array
           interval: 600,
           tolerance: 200,
           proxies: obj['proxy-groups'][0]['proxies'].filter(
-            p => p.startsWith('V2-US') || p.startsWith('V2-HK')
+            p => p.startsWith('V2-US')
           ),
         }
         obj['proxy-groups'].push(chatGroup)
