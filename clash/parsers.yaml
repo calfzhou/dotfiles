@@ -104,6 +104,7 @@ parsers: # array
           path: ./ruleset/tld-not-cn.yaml
       append-rules:
         - DOMAIN-SUFFIX,openai.com,ChatGPT
+        - PROCESS-NAME,v2ray,PROXY
         - DOMAIN,raw.githubusercontent.com,PROXY
         - RULE-SET,custom-proxy,PROXY
         - RULE-SET,custom-direct,DIRECT
