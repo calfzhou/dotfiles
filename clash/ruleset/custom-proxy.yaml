@@ -3,4 +3,5 @@ payload:
   - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,discourse-cdn.com
   - DOMAIN-SUFFIX,hledger.org
+  - DOMAIN,p.olelive.com
   - DOMAIN-SUFFIX,singlelogin.me # z-lib
