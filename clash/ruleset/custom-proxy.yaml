@@ -1,5 +1,6 @@
 payload:
   - DOMAIN-SUFFIX,abcnotation.com
+  - DOMAIN-SUFFIX,bootstrapcdn.com
   - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,discourse-cdn.com
   - DOMAIN-SUFFIX,hledger.org
