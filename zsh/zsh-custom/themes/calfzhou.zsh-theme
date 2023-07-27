@@ -67,6 +67,11 @@ prompt_git() {
     fi;
 }
 
+go_prompt_info() {
+    local version=$(go version | awk '{print $3}')
+    echo -e $version
+}
+
 ZSH_THEME_VIRTUALENV_PREFIX=" ${magenta}("
 ZSH_THEME_VIRTUALENV_SUFFIX=")"
 
@@ -103,6 +108,7 @@ PROMPT+="${reset} in ${green}%~" # working directory
 PROMPT+="\$(prompt_git 2>/dev/null)" # git branch and status
 PROMPT+=" ${magenta}(\${\$(pyenv_prompt_info 2>/dev/null)%%:*})" # pyenv version
 # PROMPT+="\$(virtualenv_prompt_info)" # python virtual env
+PROMPT+=" ${blue}\$(go_prompt_info 2>/dev/null)" # go version
 PROMPT+="\$(nvm_prompt_info)" # nvm node version
 PROMPT+="\$(rvm_prompt_info)" # rvm ruby version
 PROMPT+="${shell_level}" # shell level
