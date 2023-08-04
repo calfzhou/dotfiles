@@ -12,34 +12,38 @@ trim_trailing_whitespace = true
 end_of_line = lf
 insert_final_newline = true
 
-[*.tsv]
-indent_style = tab
-indent_size = 4
-trim_trailing_whitespace = false
+[*.bat]
+end_of_line = crlf
 
-[*.py]
-indent_size = 4
-
-[*.{json,yml,yaml,cson}]
+[*.{c,h,cpp,hpp}]
 indent_size = 2
 
 [*.{coffee,js,scss,css}]
 indent_size = 2
 
-[*.{rb,html.erb}]
+[*.{cson,json,yaml,yml}]
+indent_size = 2
+
+[*.go]
+indent_style = tab
+indent_size = 4
+
+[*.journal]
 indent_size = 2
 
 [*.{pu,puml}]
 indent_size = 2
 
+[*.py]
+indent_size = 4
+
+[*.{rb,html.erb}]
+indent_size = 2
+
 [*.tex]
 indent_size = 2
 
-[*.bat]
-end_of_line = crlf
-
-[*.{h,c,cpp,hpp}]
-indent_size = 2
-
-[*.journal]
-indent_size = 2
+[*.tsv]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = false
