@@ -25,3 +25,5 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 # Do not check for broken linkage of dependents or outdated dependents
 # after installing, upgrading or reinstalling formulae.
 export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
+
+export GPG_TTY=$(tty)
