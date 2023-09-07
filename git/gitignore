@@ -614,5 +614,3 @@ MigrationBackup/
 
 
 ### CUSTOMIZED ###
-# Ignore this due to absolute pythonpath
-.vscode/settings.json
