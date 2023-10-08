@@ -7,3 +7,4 @@ payload:
   - DOMAIN-SUFFIX,loli.net # CDN of sm.ms
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,singlelogin.me # z-lib
+  - DOMAIN-SUFFIX,vercel.com
