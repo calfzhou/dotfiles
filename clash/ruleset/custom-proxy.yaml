@@ -8,3 +8,4 @@ payload:
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,singlelogin.me # z-lib
   - DOMAIN-SUFFIX,vercel.com
+  - DOMAIN-SUFFIX,vercel-dns.com
