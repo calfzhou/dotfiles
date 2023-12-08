@@ -275,3 +275,16 @@ function sleepuntil {
         echo $(date -d "$*") alread passed
     fi
 }
+
+# Check TCP listening info. E.g.:
+# listening nginx
+# listening 8080
+listening() {
+    if [ $# -eq 0 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P
+    elif [ $# -eq 1 ]; then
+        sudo lsof -iTCP -sTCP:LISTEN -n -P | grep -i --color $1
+    else
+        echo "Usage: listening [pattern]"
+    fi
+}

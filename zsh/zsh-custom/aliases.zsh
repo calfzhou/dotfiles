@@ -111,9 +111,9 @@ alias reload="exec $SHELL -l"
 # Faster npm for Europeans
 #command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
 
-# Setup or dismiss (goagent) proxy for curl, wget, etc.
-alias gaproxy='export http_proxy=http://127.0.0.1:8087 https_proxy=http://127.0.0.1:8087'
-alias noproxy='unset http_proxy https_proxy'
+# Setup or dismiss (clash) proxy for curl, wget, etc.
+alias setproxy='export http_proxy=http://127.0.0.1:1086 https_proxy=http://127.0.0.1:1086 all_proxy=socks5://127.0.0.1:1086'
+alias noproxy='unset http_proxy https_proxy all_proxy'
 
 # YAML and JSON conversion
 # Usage: yaml2json < in.yaml > out.json
@@ -122,6 +122,9 @@ alias yaml2json='ruby -ryaml -rjson -e "puts JSON.pretty_generate(YAML.load(STDI
 alias json2yaml='ruby -ryaml -rjson -e "puts YAML.dump(JSON.parse(STDIN.read))"'
 
 # Generate UUID
+# Usage:
+# uuid # e.g. cf4e0a09-f4b5-4e99-9c3f-2943615f3924
+# uuid | tr -d - # e.g. cf4e0a09f4b54e999c3f2943615f3924
 alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
 
 # SSH via socks 5 proxy
