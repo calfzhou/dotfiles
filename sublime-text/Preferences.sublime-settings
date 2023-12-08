@@ -11,7 +11,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"open_files_in_new_window": false,
 	"rulers":
@@ -24,5 +24,6 @@
 	"spell_check": true,
 	"theme": "Solarized Space Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"update_check": false,
 }
