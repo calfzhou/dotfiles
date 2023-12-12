@@ -432,6 +432,7 @@
     "Blue Component" : 0.7686274509803922,
     "Green Component" : 0.44313725490196076
   },
+  "Allow Paste Bracketing" : false,
   "Columns" : 120,
   "Visual Bell" : true,
   "Custom Directory" : "Advanced",
