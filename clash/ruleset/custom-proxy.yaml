@@ -1,11 +1,13 @@
 payload:
   - DOMAIN-SUFFIX,abcnotation.com
   - DOMAIN-SUFFIX,bootstrapcdn.com
+  - DOMAIN-SUFFIX,boum.org  # tails
   - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,discourse-cdn.com
   - DOMAIN-SUFFIX,hledger.org
   - DOMAIN-SUFFIX,loli.net # CDN of sm.ms
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,singlelogin.me # z-lib
+  - DOMAIN-SUFFIX,tails.net
   - DOMAIN-SUFFIX,vercel.com
   - DOMAIN-SUFFIX,vercel-dns.com
