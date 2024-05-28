@@ -22,7 +22,7 @@ end_of_line = crlf
 [*.{c,h,cpp,hpp}]
 indent_size = 2
 
-[*.{coffee,js,scss,css}]
+[*.{coffee,js,ejs,scss,css,styl}]
 indent_size = 2
 
 [*.{cson,json,yaml,yml}]
