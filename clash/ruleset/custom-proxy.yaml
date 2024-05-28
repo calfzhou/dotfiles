@@ -1,5 +1,6 @@
 payload:
   - DOMAIN-SUFFIX,abcnotation.com
+  - DOMAIN-SUFFIX,azureedge.net
   - DOMAIN-SUFFIX,bootstrapcdn.com
   - DOMAIN-SUFFIX,boum.org  # tails
   - DOMAIN-SUFFIX,cloudflare.com
