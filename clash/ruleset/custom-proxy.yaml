@@ -5,6 +5,7 @@ payload:
   - DOMAIN-SUFFIX,boum.org  # tails
   - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,discourse-cdn.com
+  - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,hledger.org
   - DOMAIN-SUFFIX,loli.net # CDN of sm.ms
   - DOMAIN-SUFFIX,olelive.com
