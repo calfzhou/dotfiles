@@ -111,8 +111,9 @@ alias reload="exec $SHELL -l"
 # Faster npm for Europeans
 #command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
 
-# Setup or dismiss (clash) proxy for curl, wget, etc.
+# Setup or dismiss (clash or v2ray) proxy for curl, wget, etc.
 alias setproxy='export http_proxy=http://127.0.0.1:1086 https_proxy=http://127.0.0.1:1086 all_proxy=socks5://127.0.0.1:1086'
+alias setproxyglobal='export http_proxy=http://127.0.0.1:1081 https_proxy=http://127.0.0.1:1081 all_proxy=socks5://127.0.0.1:1080'
 alias noproxy='unset http_proxy https_proxy all_proxy'
 
 # YAML and JSON conversion
