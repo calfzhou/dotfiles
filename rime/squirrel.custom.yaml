@@ -1,0 +1,17 @@
+patch:
+  'style/color_scheme': solarized_light
+  'style/color_scheme_dark': solarized_dark
+  'style/candidate_list_layout': linear
+  'style/inline_preedit': false
+  'style/inline_candidate': false
+  'style/show_paging': true
+  'style/font_face': 'LXGWWenKai-Regular, "Helvetica Neue", "PingFang SC"'
+  'style/font_point': 16
+  'style/corner_radius': 10.0
+  'style/hilited_corner_radius': 5.0
+  # 'style/border_height': -5.0
+  # 'style/border_width': -5.0
+  'style/line_spacing': 4.0
+  'style/spacing': 10.0
+  'style/alpha': 60.0
+  'style/shadow_size': 1.0
