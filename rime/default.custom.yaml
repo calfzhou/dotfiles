@@ -6,7 +6,7 @@ patch:
   'menu/page_size': 9
   # 'menu/alternative_select_labels': [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]
 
-  'punctuator/full_shape/+':
-    '/' : [ '、', '／', '÷' ]
-  'punctuator/half_shape/+':
-    '/' : '、'
+  # 'punctuator/full_shape/+':
+  #   '/' : [ '、', '／', '÷' ]
+  # 'punctuator/half_shape/+':
+  #   '/' : '、'
