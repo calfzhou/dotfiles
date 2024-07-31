@@ -4,6 +4,6 @@ patch:
     - lua_translator@*calculator_translator # 计算器
   'engine/filters/+':
     - lua_filter@cn_en_spacer  # 为中英混输词条（cn_en.dict.yaml）自动空格
-    # - lua_filter@en_spacer  # 给英文单词后面自动加一个空格
+    # - lua_filter@en_spacer  # 英文后，再输入英文单词自动添加空格
     - lua_filter@*calculator_filter # 把计算器的答案放在最前边
   'recognizer/patterns/expression': '^=.*$'
