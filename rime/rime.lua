@@ -48,6 +48,9 @@ pin_cand_filter = require("pin_cand_filter")
 -- 长词优先（全拼）
 long_word_filter = require("long_word_filter")
 
+-- 计算器
+calculator_filter = require("calculator_filter")
+
 -- 默认未启用：
 
 -- 中英混输词条自动空格
