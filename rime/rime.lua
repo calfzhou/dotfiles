@@ -20,6 +20,10 @@ unicode = require("unicode")
 -- 数字、人民币大写，R 开头
 number_translator = require("number_translator")
 
+-- 计算器
+-- https://github.com/baopaau/rime-lua-collection
+calculator_translator = require("calculator_translator")
+
 -- filters:
 
 -- 错音错字提示
