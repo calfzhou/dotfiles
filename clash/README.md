@@ -25,6 +25,8 @@
 
 ## 关于 rule-providers 加载问题
 
-由于 rule providers 的 [获取逻辑](https://github.com/Dreamacro/clash/issues/1385)，有可能会 [因为无法成功下载 rule provider 文件而导致 profile 无法被选中](https://github.com/Fndroid/clash_for_windows_pkg/issues/3101)，可以手动把 [ruleset](./ruleset) 目录中的文件复制到 CFW home 目录下的 ruleset 目录中，确保 profile 能被选中，之后就可以自动定时更新 rule provider 内容。
+由于 rule providers 的 [获取逻辑](https://github.com/Dreamacro/clash/issues/1385)，有可能会 [因为无法成功下载 rule provider 文件而导致 profile 无法被选中](https://github.com/Fndroid/clash_for_windows_pkg/issues/3101)，可以手动把 [ruleset](./ruleset) 目录中的文件复制到 CFW home 目录里（具体路径和文件命名见下边说明），确保 profile 能被选中，之后就可以自动定时更新 rule provider 内容。
 
-2023-01-28 上面这段可能在当前版本下无效了，目前 rule providers 会被保存在 ./providers/rule/ 目录下，自动命名，`path` 配置不起作用。
+较老的版本中，ruleset 文件名是可以通过 profile 由 `path` 参数自行控制的。比如 <https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt> 这个 ruleset，在 profile 中如果定义了 `path: ./ruleset/gfw.yaml`，那么它的存放路径就是 `<CFW Home>/ruleset/gfw.yaml`。
+
+但之后的版本（至少 2023-01-28 之后），rule providers 会被保存在 `./providers/rule/` 目录下，自动命名，文件名为 url 的 MD5 值加上 `.yaml` 后缀。比如 <https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt> 对应的文件就是 `960f9309574389197da5db2f95aade22`，那么它的存放路径为 `<CFW Home>/providers/rule/960f9309574389197da5db2f95aade22.yaml`。
