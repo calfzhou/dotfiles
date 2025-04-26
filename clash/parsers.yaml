@@ -72,6 +72,12 @@ parsers: # array
           url: https://cdn.jsdelivr.net/gh/calfzhou/dotfiles@master/clash/ruleset/custom-proxy.yaml
           path: ./ruleset/custom-proxy.yaml
           interval: 86400
+        custom-proxy-us:
+          behavior: classical
+          type: http
+          url: https://cdn.jsdelivr.net/gh/calfzhou/dotfiles@master/clash/ruleset/custom-proxy-us.yaml
+          path: ./ruleset/custom-proxy-us.yaml
+          interval: 86400
         gfw:
           behavior: domain
           type: http
@@ -103,10 +109,9 @@ parsers: # array
           interval: 86400
           path: ./ruleset/tld-not-cn.yaml
       append-rules:
-        - DOMAIN-SUFFIX,chatgpt.com,ChatGPT
-        - DOMAIN-SUFFIX,openai.com,ChatGPT
-        - PROCESS-NAME,v2ray,PROXY
         - DOMAIN,raw.githubusercontent.com,PROXY
+        - RULE-SET,custom-proxy-us,ChatGPT
+        - PROCESS-NAME,v2ray,PROXY
         - RULE-SET,custom-proxy,PROXY
         - RULE-SET,custom-direct,DIRECT
         - RULE-SET,private,DIRECT
