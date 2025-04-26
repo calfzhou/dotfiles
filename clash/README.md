@@ -30,3 +30,7 @@
 较老的版本中，ruleset 文件名是可以通过 profile 由 `path` 参数自行控制的。比如 <https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt> 这个 ruleset，在 profile 中如果定义了 `path: ./ruleset/gfw.yaml`，那么它的存放路径就是 `<CFW Home>/ruleset/gfw.yaml`。
 
 但之后的版本（至少 2023-01-28 之后），rule providers 会被保存在 `./providers/rule/` 目录下，自动命名，文件名为 url 的 MD5 值加上 `.yaml` 后缀。比如 <https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt> 对应的文件就是 `960f9309574389197da5db2f95aade22`，那么它的存放路径为 `<CFW Home>/providers/rule/960f9309574389197da5db2f95aade22.yaml`。
+
+可以使用或参考 `./ruleset` 目录里的 [`_deploy_custom_rules.sh`](./ruleset/_deploy_custom_rules.sh) 脚本复制目前所有 custom ruleset。
+
+另外，profile 成功被选中之后，如果 providers 那里更新失败，可以试试开启 TUN mode。
