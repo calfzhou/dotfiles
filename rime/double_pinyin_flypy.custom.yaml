@@ -1,11 +1,6 @@
 patch:
   'translator/dictionary': rime_ice.custom
-  'engine/translators/+':
-    - lua_translator@*calculator_translator # 计算器
   'engine/filters/+':
-    - lua_filter@cn_en_spacer  # 为中英混输词条（cn_en.dict.yaml）自动空格
-    # - lua_filter@en_spacer  # 英文后，再输入英文单词自动添加空格
-    - lua_filter@*calculator_filter # 把计算器的答案放在最前边
-  'recognizer/patterns/expression': '^=.*$'
+    - lua_filter@*cn_en_spacer  # 为中英混输词条（cn_en.dict.yaml）自动空格
   # [双拼模式下怎么能不让输入框的拼音自动展开成全拼？ · Issue #261 · rime/squirrel](https://github.com/rime/squirrel/issues/261)
   'translator/preedit_format': []
