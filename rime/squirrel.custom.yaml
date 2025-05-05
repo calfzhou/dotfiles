@@ -27,6 +27,7 @@ patch:
       ascii_mode: true
       no_inline: true
     com.googlecode.iterm2:
+      ascii_mode: true
       no_inline: true
     org.vim.MacVim:
       ascii_mode: true  # 初始爲西文模式
