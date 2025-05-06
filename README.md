@@ -4,9 +4,6 @@ It's time to make as many as possible configuration files under version control.
 
 This can also help me to sync configurations among computers or systems.
 
-The `master` branch is for general conditions. System based branches will be used
-for different systems and/or environments.
-
 ## About Git Submodules
 
 This repo contains several submodules, to make it simple, use `git clone --recursive` (or `git c` if you are using git config provided by this repo).
@@ -14,6 +11,19 @@ This repo contains several submodules, to make it simple, use `git clone --recur
 Otherwise, use `git submodule init` and `git submodule update` after a normal clone.
 
 To update all submodules, run `git submodule foreach git pull`.
+
+## About Private Configs
+
+Private or sensitive personal configurations should not be included in public repos.
+
+They are stored in `_personal` folder, which is ignored by git.
+
+To version control these files, use a private repo and clone it to `_personal` folder.
+
+``` bash
+cd $DOTFILES_HOME
+git clone git@github.com:USER/dotfiles-private _personal
+```
 
 ## General Usage
 
