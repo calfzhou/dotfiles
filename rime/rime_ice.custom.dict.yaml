@@ -6,14 +6,18 @@ name: rime_ice.custom
 version: '2024.07.26'
 sort: by_weight
 import_tables:
-  - my_dicts/contact
-
-  # Don't know why, but import `rime_ice` doesn't work. So import all tables manually.
-  # - rime_ice
+  # Imported dictionary files do not include other files that are imported within them.
+  # This section is copied from rime_ice.dict.yaml.
   - cn_dicts/8105     # 字表
-  # - cn_dicts/41448  # 大字表（按需启用）
+  # - cn_dicts/41448  # 大字表（按需启用）（启用时和 8105 同时启用并放在 8105 下面）
   - cn_dicts/base     # 基础词库
   - cn_dicts/ext      # 扩展词库
   - cn_dicts/tencent  # 腾讯词向量（大词库，部署时间较长）
   - cn_dicts/others   # 一些杂项
+
+  # Import everything from rime_ice.dict.yaml.
+  - rime_ice
+
+  # Custom dictionaries.
+  - my_dicts/contact
 ...
