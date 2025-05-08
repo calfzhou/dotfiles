@@ -3,7 +3,7 @@
 
 ---
 name: rime_ice.custom
-version: '2024.07.26'
+version: '2025-05-08'
 sort: by_weight
 import_tables:
   # Imported dictionary files do not include other files that are imported within them.
