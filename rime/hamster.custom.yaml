@@ -1,0 +1,27 @@
+patch:
+  # 上下显示划动文本规则布局
+  'keyboard/swipeLabelUpAndDownLayout': true
+
+  # 启用触控反馈
+  'keyboard/enableHapticFeedback': true
+
+  # 九宫格键盘左侧符号
+  'keyboard/symbolsOfGridOfNumericKeyboard': ['%', '+', '-', '*', '/', '=', ',', '#', ':']
+  # Shift状态锁定
+  'keyboard/lockShiftState': false
+
+  # 设置符号光标居中
+  'keyboard/symbolsOfCursorBack': ['""', '“”', '()', '（）', '[]', '【】', '{}', '《》', '「」', '『』']
+  # 成对上屏的符号
+  'keyboard/pairsOfSymbols': ['""', '“”', '()', '（）', '[]', '【】', '{}', '《》', '「」', '『』']
+
+  # 是否启用空格加载文本
+  'keyboard/enableLoadingTextForSpaceButton': false
+  # 空格按钮长显为当前输入方案
+  'keyboard/showCurrentInputSchemaNameForSpaceButton': true
+  # 中文26键显示大写字符
+  'keyboard/showUppercasedCharacterOnChineseKeyboard': false
+
+  # RIME 重新部署时，是否覆盖词库文件
+  # 如果使用自造词，需要改为 false, 否则部署时会覆盖键盘自造词文件
+  'rime/overrideDictFiles': false
