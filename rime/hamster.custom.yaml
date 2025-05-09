@@ -27,6 +27,7 @@ patch:
   'rime/overrideDictFiles': false
 
   # 自定义中文 26 键按键的划动与长按（气泡）
+  # 以下划文本展示韵母映射关系
   'swipe/keyboardSwipe/chinese/keys':
     - action: comma
       swipe:
@@ -45,6 +46,9 @@ patch:
         - direction: up
           action: { character: { char: "`" } }
           processByRIME: true
+        - direction: down
+          action: none
+          label: "a"
       callout:
         - action: { symbol: { char: "A" } }
         - action: { character: { char: "`" } }
@@ -58,6 +62,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "？" } }
+        - direction: down
+          action: none
+          label: "in"
       callout:
         - action: { symbol: { char: "B" } }
         - action: { character: { char: "?" } }
@@ -66,6 +73,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "#" } }
+        - direction: down
+          action: none
+          label: "ao"
       callout:
         - action: { symbol: { char: "C" } }
         - action: { character: { char: "#" } }
@@ -76,6 +86,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "：" } }
+        - direction: down
+          action: none
+          label: "ai"
       callout:
         - action: { symbol: { char: "D" } }
         - action: { character: { char: ":" } }
@@ -84,6 +97,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "3" } }
+        - direction: down
+          action: none
+          label: "e"
       callout:
         - action: { symbol: { char: "E" } }
         - action: { character: { char: "#" } }
@@ -93,6 +109,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "；" } }
+        - direction: down
+          action: none
+          label: "en"
       callout:
         - action: { symbol: { char: "F" } }
         - action: { character: { char: ";" } }
@@ -101,6 +120,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "（" } }
+        - direction: down
+          action: none
+          label: "eng"
       callout:
         - action: { symbol: { char: "G" } }
         - action: { character: { char: "(" } }
@@ -109,6 +131,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "）" } }
+        - direction: down
+          action: none
+          label: "ang"
       callout:
         - action: { symbol: { char: "H" } }
         - action: { character: { char: ")" } }
@@ -117,6 +142,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "8" } }
+        - direction: down
+          action: none
+          label: "i"
       callout:
         - action: { symbol: { char: "I" } }
         - action: { character: { char: "*" } }
@@ -127,6 +155,9 @@ patch:
         - direction: up
           action: { symbol: { char: "～" } }
           label: "~"
+        - direction: down
+          action: none
+          label: "an"
       callout:
         - action: { symbol: { char: "J" } }
         - action: { character: { char: "~" } }
@@ -136,6 +167,9 @@ patch:
         - direction: up
           action: { symbol: { char: "“" } }
           label: '"'
+        - direction: down
+          action: none
+          label: "uai ing"
       callout:
         - action: { symbol: { char: "K" } }
         - action: { character: { char: '"' } }
@@ -145,6 +179,9 @@ patch:
         - direction: up
           action: { symbol: { char: "”" } }
           label: '"'
+        - direction: down
+          action: none
+          label: "iang uang"
       callout:
         - action: { symbol: { char: "L" } }
         - action: { character: { char: '"' } }
@@ -157,6 +194,9 @@ patch:
         - direction: up
           action: { symbol: { char: "…" } }
           label: "..."
+        - direction: down
+          action: none
+          label: "ian"
       callout:
         - action: { symbol: { char: "M" } }
         - action: { symbol: { char: "……" } }
@@ -165,6 +205,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "！" } }
+        - direction: down
+          action: none
+          label: "iao"
       callout:
         - action: { symbol: { char: "N" } }
         - action: { symbol: { char: "！" } }
@@ -173,6 +216,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "9" } }
+        - direction: down
+          action: none
+          label: "o uo"
       callout:
         - action: { symbol: { char: "O" } }
         - action: { character: { char: "(" } }
@@ -182,6 +228,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "0" } }
+        - direction: down
+          action: none
+          label: "ie"
       callout:
         - action: { symbol: { char: "P" } }
         - action: { character: { char: ")" } }
@@ -191,6 +240,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "1" } }
+        - direction: down
+          action: none
+          label: "iu"
       callout:
         - action: { symbol: { char: "Q" } }
         - action: { character: { char: "!" } }
@@ -200,6 +252,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "4" } }
+        - direction: down
+          action: none
+          label: "uan"
       callout:
         - action: { symbol: { char: "R" } }
         - action: { character: { char: "$" } }
@@ -209,6 +264,9 @@ patch:
       swipe:
         - direction: up
           action: { character: { char: "/" } }
+        - direction: down
+          action: none
+          label: "ong iong"
       callout:
         - action: { symbol: { char: "S" } }
         - action: { character: { char: "/" } }
@@ -217,6 +275,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "5" } }
+        - direction: down
+          action: none
+          label: "ue üe"
       callout:
         - action: { symbol: { char: "T" } }
         - action: { character: { char: "%" } }
@@ -226,6 +287,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "7" } }
+        - direction: down
+          action: none
+          label: "u"
       callout:
         - action: { symbol: { char: "U" } }
         - action: { character: { char: "&" } }
@@ -235,6 +299,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "、" } }
+        - direction: down
+          action: none
+          label: "ui ü"
       callout:
         - action: { symbol: { char: "V" } }
         - action: { character: { char: "|" } }
@@ -246,6 +313,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "2" } }
+        - direction: down
+          action: none
+          label: "ei"
       callout:
         - action: { symbol: { char: "W" } }
         - action: { character: { char: "@" } }
@@ -255,6 +325,9 @@ patch:
       swipe:
         - direction: up
           action: { character: { char: "." } }
+        - direction: down
+          action: none
+          label: "ia ua"
       callout:
         - action: { symbol: { char: "X" } }
         - action: { character: { char: "." } }
@@ -265,6 +338,9 @@ patch:
       swipe:
         - direction: up
           action: { symbol: { char: "6" } }
+        - direction: down
+          action: none
+          label: "un"
       callout:
         - action: { symbol: { char: "Y" } }
         - action: { character: { char: "^" } }
@@ -274,6 +350,9 @@ patch:
       swipe:
         - direction: up
           action: { character: { char: "@" } }
+        - direction: down
+          action: none
+          label: "ou"
       callout:
         - action: { symbol: { char: "Z" } }
         - action: { character: { char: "@" } }
