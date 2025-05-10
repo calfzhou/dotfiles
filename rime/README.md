@@ -7,7 +7,6 @@
 [rime/squirrel: 【鼠鬚管】Rime for macOS](https://github.com/rime/squirrel)
 
 ``` bash
-ln -snf $DOTFILES_HOME/_personal/PATH-TO-MY-DICTS $DOTFILES_HOME/rime/my_dicts
 ln -s $DOTFILES_HOME/rime ~/Library/Rime
 ```
 

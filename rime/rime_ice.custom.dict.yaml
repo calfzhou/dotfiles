@@ -19,5 +19,4 @@ import_tables:
   - rime_ice
 
   # Custom dictionaries.
-  - my_dicts/contact
 ...
