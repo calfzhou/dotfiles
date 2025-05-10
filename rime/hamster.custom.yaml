@@ -27,41 +27,43 @@ patch:
   'rime/overrideDictFiles': false
 
   # 自定义中文 26 键按键的划动与长按（气泡）
-  # 以下划文本展示韵母映射关系
+  # 增加下划文本用于展示小鹤双拼韵母映射关系
   'swipe/keyboardSwipe/chinese/keys':
     - action: comma
       swipe:
         - direction: up
           action: period
       callout:
-        - action: { keyboardType: classifySymbolic }
-          label: "符"
+        - action: { symbol: { char: "……" } }
         - action: { symbol: { char: "。" } }
         - action: { symbol: { char: "？" } }
         - action: { symbol: { char: "！" } }
-        - action: { symbol: { char: "@" } }
-        - action: { symbol: { char: "……" } }
+        - action: { keyboardType: classifySymbolic }
+          label: "符"
     - action: { character: { char: "a" } }
       swipe:
         - direction: up
-          action: { character: { char: "`" } }
+          action: { character: { char: "~" } }
           processByRIME: true
         - direction: down
           action: none
           label: "a"
       callout:
         - action: { symbol: { char: "A" } }
+        - action: { character: { char: "~" } }
         - action: { character: { char: "`" } }
-        - action: { character: { char: "-" } }
         - action: { symbol: { char: "a" } }
-#          - action: { shortcutCommand: "#全选" }
-#            label: "全选"
-        - action: { shortcutCommand: "#右手模式" }
-          label: "右单"
+        # - action: { shortcutCommand: "#全选" } # Not working
+        #   label: "全选"
+        - action: { symbol: { char: "ā" } }
+        - action: { symbol: { char: "á" } }
+        - action: { symbol: { char: "ǎ" } }
+        - action: { symbol: { char: "à" } }
     - action: { character: { char: "b" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "？" } }
+          action: { character: { char: "?" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "in"
@@ -85,7 +87,8 @@ patch:
     - action: { character: { char: "d" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "：" } }
+          action: { character: { char: ":" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "ai"
@@ -103,12 +106,17 @@ patch:
       callout:
         - action: { symbol: { char: "E" } }
         - action: { character: { char: "#" } }
-        - action: { character: { char: "3" } }
+        - action: { symbol: { char: "3" } }
         - action: { symbol: { char: "e" } }
+        - action: { symbol: { char: "ē" } }
+        - action: { symbol: { char: "é" } }
+        - action: { symbol: { char: "ě" } }
+        - action: { symbol: { char: "è" } }
     - action: { character: { char: "f" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "；" } }
+          action: { character: { char: ";" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "en"
@@ -119,7 +127,8 @@ patch:
     - action: { character: { char: "g" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "（" } }
+          action: { character: { char: "(" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "eng"
@@ -130,7 +139,8 @@ patch:
     - action: { character: { char: "h" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "）" } }
+          action: { character: { char: ")" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "ang"
@@ -148,69 +158,75 @@ patch:
       callout:
         - action: { symbol: { char: "I" } }
         - action: { character: { char: "*" } }
-        - action: { character: { char: "8" } }
+        - action: { symbol: { char: "8" } }
         - action: { symbol: { char: "i" } }
+        - action: { symbol: { char: "ī" } }
+        - action: { symbol: { char: "í" } }
+        - action: { symbol: { char: "ǐ" } }
+        - action: { symbol: { char: "ì" } }
     - action: { character: { char: "j" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "～" } }
-          label: "~"
+          action: { character: { char: "[" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "an"
       callout:
         - action: { symbol: { char: "J" } }
-        - action: { character: { char: "~" } }
+        - action: { character: { char: "[" } }
+        - action: { character: { char: "]" } }
         - action: { symbol: { char: "j" } }
     - action: { character: { char: "k" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "“" } }
-          label: '"'
+          action: { character: { char: '"' } }
+          processByRIME: true
         - direction: down
           action: none
           label: "uai ing"
       callout:
         - action: { symbol: { char: "K" } }
         - action: { character: { char: '"' } }
+        - action: { symbol: { char: '”' } }
         - action: { symbol: { char: "k" } }
     - action: { character: { char: "l" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "”" } }
-          label: '"'
+          action: { character: { char: "'" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "u|iang"
       callout:
         - action: { symbol: { char: "L" } }
-        - action: { character: { char: '"' } }
         - action: { character: { char: "'" } }
+        - action: { symbol: { char: '’' } }
         - action: { symbol: { char: "l" } }
-        - action: { shortcutCommand: "#左手模式" }
-          label: "左单"
     - action: { character: { char: "m" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "…" } }
-          label: "..."
+          action: { character: { char: "{" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "ian"
       callout:
         - action: { symbol: { char: "M" } }
-        - action: { symbol: { char: "……" } }
+        - action: { character: { char: "{" } }
+        - action: { character: { char: "}" } }
         - action: { symbol: { char: "m" } }
     - action: { character: { char: "n" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "！" } }
+          action: { character: { char: "!" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "iao"
       callout:
         - action: { symbol: { char: "N" } }
-        - action: { symbol: { char: "！" } }
+        - action: { character: { char: "!" } }
         - action: { symbol: { char: "n" } }
     - action: { character: { char: "o" } }
       swipe:
@@ -222,8 +238,12 @@ patch:
       callout:
         - action: { symbol: { char: "O" } }
         - action: { character: { char: "(" } }
-        - action: { character: { char: "9" } }
+        - action: { symbol: { char: "9" } }
         - action: { symbol: { char: "o" } }
+        - action: { symbol: { char: "ō" } }
+        - action: { symbol: { char: "ó" } }
+        - action: { symbol: { char: "ǒ" } }
+        - action: { symbol: { char: "ò" } }
     - action: { character: { char: "p" } }
       swipe:
         - direction: up
@@ -234,7 +254,7 @@ patch:
       callout:
         - action: { symbol: { char: "P" } }
         - action: { character: { char: ")" } }
-        - action: { character: { char: "0" } }
+        - action: { symbol: { char: "0" } }
         - action: { symbol: { char: "p" } }
     - action: { character: { char: "q" } }
       swipe:
@@ -246,7 +266,7 @@ patch:
       callout:
         - action: { symbol: { char: "Q" } }
         - action: { character: { char: "!" } }
-        - action: { character: { char: "1" } }
+        - action: { symbol: { char: "1" } }
         - action: { symbol: { char: "q" } }
     - action: { character: { char: "r" } }
       swipe:
@@ -258,7 +278,7 @@ patch:
       callout:
         - action: { symbol: { char: "R" } }
         - action: { character: { char: "$" } }
-        - action: { character: { char: "4" } }
+        - action: { symbol: { char: "4" } }
         - action: { symbol: { char: "r" } }
     - action: { character: { char: "s" } }
       swipe:
@@ -281,7 +301,7 @@ patch:
       callout:
         - action: { symbol: { char: "T" } }
         - action: { character: { char: "%" } }
-        - action: { character: { char: "5" } }
+        - action: { symbol: { char: "5" } }
         - action: { symbol: { char: "t" } }
     - action: { character: { char: "u" } }
       swipe:
@@ -293,22 +313,32 @@ patch:
       callout:
         - action: { symbol: { char: "U" } }
         - action: { character: { char: "&" } }
-        - action: { character: { char: "7" } }
+        - action: { symbol: { char: "7" } }
         - action: { symbol: { char: "u" } }
+        - action: { symbol: { char: "ū" } }
+        - action: { symbol: { char: "ú" } }
+        - action: { symbol: { char: "ǔ" } }
+        - action: { symbol: { char: "ù" } }
     - action: { character: { char: "v" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "、" } }
+          action: { character: { char: "\\" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "ui ü"
       callout:
         - action: { symbol: { char: "V" } }
-        - action: { character: { char: "|" } }
         - action: { character: { char: "\\" } }
+        - action: { character: { char: "|" } }
         - action: { symbol: { char: "v" } }
         - action: { shortcutCommand: "#粘贴" }
           label: "粘贴"
+        - action: { symbol: { char: "ü" } }
+        - action: { symbol: { char: "ǖ" } }
+        - action: { symbol: { char: "ǘ" } }
+        - action: { symbol: { char: "ǚ" } }
+        - action: { symbol: { char: "ǜ" } }
     - action: { character: { char: "w" } }
       swipe:
         - direction: up
@@ -319,18 +349,19 @@ patch:
       callout:
         - action: { symbol: { char: "W" } }
         - action: { character: { char: "@" } }
-        - action: { character: { char: "2" } }
+        - action: { symbol: { char: "2" } }
         - action: { symbol: { char: "w" } }
     - action: { character: { char: "x" } }
       swipe:
         - direction: up
-          action: { character: { char: "." } }
+          action: { character: { char: "_" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "ia ua"
       callout:
         - action: { symbol: { char: "X" } }
-        - action: { character: { char: "." } }
+        - action: { character: { char: "_" } }
         - action: { symbol: { char: "x" } }
         - action: { shortcutCommand: "#剪切" }
           label: "剪切"
@@ -344,18 +375,19 @@ patch:
       callout:
         - action: { symbol: { char: "Y" } }
         - action: { character: { char: "^" } }
-        - action: { character: { char: "6" } }
+        - action: { symbol: { char: "6" } }
         - action: { symbol: { char: "y" } }
     - action: { character: { char: "z" } }
       swipe:
         - direction: up
-          action: { character: { char: "@" } }
+          action: { character: { char: "-" } }
+          processByRIME: true
         - direction: down
           action: none
           label: "ou"
       callout:
         - action: { symbol: { char: "Z" } }
-        - action: { character: { char: "@" } }
+        - action: { character: { char: "-" } }
         - action: { symbol: { char: "z" } }
         - action: { shortcutCommand: "#撤销" }
           label: "撤销"
@@ -365,25 +397,33 @@ patch:
       swipe:
         - direction: up
           action: { shortcutCommand: "#次选上屏" }
-          display: false
+          # display: false
+          label: "2ⁿᵈ"
     - action: enter
       swipe:
         - direction: up
           action: { shortcutCommand: "#换行" }
+          label: "↵"
+      callout:
+        - action: { shortcutCommand: "#换行" }
+          label: "换行"
     - action: backspace
       swipe:
         - direction: up
           action: { shortcutCommand: "#重输" }
+          label: "esc"
         - direction: left
           action: { shortcutCommand: "#重输" }
     - action: { keyboardType: "numericNineGrid" }
       swipe:
         - direction: up
           action: { shortcutCommand: "#上个输入方案" }
+          label: "⎇"
     - action: { keyboardType: "chineseNumeric" }
       swipe:
         - direction: up
           action: { shortcutCommand: "#上个输入方案" }
+          label: "⎇"
 
   # 自定义内置英文键盘按键的划动与长按（气泡）
   'swipe/keyboardSwipe/+':
