@@ -181,7 +181,7 @@ patch:
           label: '"'
         - direction: down
           action: none
-          label: "iang uang"
+          label: "u|iang"
       callout:
         - action: { symbol: { char: "L" } }
         - action: { character: { char: '"' } }
@@ -266,7 +266,7 @@ patch:
           action: { character: { char: "/" } }
         - direction: down
           action: none
-          label: "ong iong"
+          label: "i?ong"
       callout:
         - action: { symbol: { char: "S" } }
         - action: { character: { char: "/" } }
