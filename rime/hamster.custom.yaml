@@ -11,9 +11,9 @@ patch:
   'keyboard/lockShiftState': false
 
   # 设置符号光标居中
-  'keyboard/symbolsOfCursorBack': ['""', '“”', '()', '（）', '[]', '【】', '{}', '《》', '「」', '『』']
+  'keyboard/symbolsOfCursorBack': ['""', '“”', '‘’', '()', '（）', '[]', '【】', '{}', '「」', '『』', '《》']
   # 成对上屏的符号
-  'keyboard/pairsOfSymbols': ['""', '“”', '()', '（）', '[]', '【】', '{}', '《》', '「」', '『』']
+  'keyboard/pairsOfSymbols': ['""', '“”', '‘’', '()', '（）', '[]', '【】', '{}', '「」', '『』', '《》']
 
   # 是否启用空格加载文本
   'keyboard/enableLoadingTextForSpaceButton': false
@@ -74,13 +74,14 @@ patch:
     - action: { character: { char: "c" } }
       swipe:
         - direction: up
-          action: { symbol: { char: "#" } }
+          action: { symbol: { char: "=" } }
         - direction: down
           action: none
           label: "ao"
       callout:
         - action: { symbol: { char: "C" } }
-        - action: { character: { char: "#" } }
+        - action: { character: { char: "=" } }
+        - action: { character: { char: "+" } }
         - action: { symbol: { char: "c" } }
         - action: { shortcutCommand: "#复制" }
           label: "复制"
@@ -127,25 +128,27 @@ patch:
     - action: { character: { char: "g" } }
       swipe:
         - direction: up
-          action: { character: { char: "(" } }
+          action: { character: { char: "<" } }
           processByRIME: true
         - direction: down
           action: none
           label: "eng"
       callout:
         - action: { symbol: { char: "G" } }
-        - action: { character: { char: "(" } }
+        - action: { character: { char: "<" } }
+        - action: { character: { char: ">" } }
         - action: { symbol: { char: "g" } }
     - action: { character: { char: "h" } }
       swipe:
         - direction: up
-          action: { character: { char: ")" } }
+          action: { character: { char: "(" } }
           processByRIME: true
         - direction: down
           action: none
           label: "ang"
       callout:
         - action: { symbol: { char: "H" } }
+        - action: { character: { char: "(" } }
         - action: { character: { char: ")" } }
         - action: { symbol: { char: "h" } }
     - action: { character: { char: "i" } }
@@ -474,13 +477,14 @@ patch:
         - action: { character: { char: "c" } }
           swipe:
             - direction: up
-              action: { symbol: { char: "#" } }
+              action: { symbol: { char: "=" } }
             - direction: down
               action: none
               label: "ao"
           callout:
             - action: { symbol: { char: "C" } }
-            - action: { character: { char: "#" } }
+            - action: { character: { char: "=" } }
+            - action: { character: { char: "+" } }
             - action: { symbol: { char: "c" } }
             - action: { shortcutCommand: "#复制" }
               label: "复制"
@@ -527,25 +531,27 @@ patch:
         - action: { character: { char: "g" } }
           swipe:
             - direction: up
-              action: { character: { char: "(" } }
+              action: { character: { char: "<" } }
               processByRIME: true
             - direction: down
               action: none
               label: "eng"
           callout:
             - action: { symbol: { char: "G" } }
-            - action: { character: { char: "(" } }
+            - action: { character: { char: "<" } }
+            - action: { character: { char: ">" } }
             - action: { symbol: { char: "g" } }
         - action: { character: { char: "h" } }
           swipe:
             - direction: up
-              action: { character: { char: ")" } }
+              action: { character: { char: "(" } }
               processByRIME: true
             - direction: down
               action: none
               label: "ang"
           callout:
             - action: { symbol: { char: "H" } }
+            - action: { character: { char: "(" } }
             - action: { character: { char: ")" } }
             - action: { symbol: { char: "h" } }
         - action: { character: { char: "i" } }
