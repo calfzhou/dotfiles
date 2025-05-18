@@ -1,6 +1,14 @@
 patch:
-  'translator/dictionary': rime_ice.custom
+  # 'switches/@0/reset': 1 # 默认英文状态
+
   'engine/filters/+':
-    - lua_filter@*cn_en_spacer  # 为中英混输词条（cn_en.dict.yaml）自动空格
-  # [双拼模式下怎么能不让输入框的拼音自动展开成全拼？ · Issue #261 · rime/squirrel](https://github.com/rime/squirrel/issues/261)
+    - lua_filter@*cn_en_spacer # 为中英混输词条（cn_en.dict.yaml）自动空格
+
+  'translator/dictionary': rime_ice.custom
+  # [双拼模式下怎么能不让输入框的拼音自动展开成全拼？](https://github.com/rime/squirrel/issues/261)
   'translator/preedit_format': []
+
+  # 'emoji/opencc_config': emoji_custom # This patch doesn't work
+
+  'punctuator/symbols/+':
+    - 'Vvv': [👌, 👍, 😂, 😅, 😡, 😮, 😱, 😭, 😘, 😰, 💩]
