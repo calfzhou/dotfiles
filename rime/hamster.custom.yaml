@@ -429,319 +429,317 @@ patch:
           label: "⎇"
 
   # 自定义内置英文键盘按键的划动与长按（气泡）
-  'swipe/keyboardSwipe/+':
-    alphabetic:
-      keys:
+  'swipe/keyboardSwipe/alphabetic/keys':
+    - action: { symbol: { char: "." } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "," } }
+      callout:
         - action: { symbol: { char: "." } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "," } }
-          callout:
-            - action: { symbol: { char: "." } }
-            - action: { symbol: { char: "," } }
-            - action: { keyboardType: classifySymbolic }
-              label: "符"
+        - action: { symbol: { char: "," } }
+        - action: { keyboardType: classifySymbolic }
+          label: "符"
+    - action: { symbol: { char: "a" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "~" } }
+        - direction: down
+          action: { symbol: { char: "`" } }
+      callout:
+        - action: { symbol: { char: "A" } }
+        - action: { symbol: { char: "~" } }
+        - action: { symbol: { char: "`" } }
         - action: { symbol: { char: "a" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "~" } }
-            - direction: down
-              action: { symbol: { char: "`" } }
-          callout:
-            - action: { symbol: { char: "A" } }
-            - action: { symbol: { char: "~" } }
-            - action: { symbol: { char: "`" } }
-            - action: { symbol: { char: "a" } }
-            # - action: { shortcutCommand: "#全选" } # Not working
-            #   label: "全选"
-            - action: { symbol: { char: "ā" } }
-            - action: { symbol: { char: "á" } }
-            - action: { symbol: { char: "ǎ" } }
-            - action: { symbol: { char: "à" } }
+        # - action: { shortcutCommand: "#全选" } # Not working
+        #   label: "全选"
+        - action: { symbol: { char: "ā" } }
+        - action: { symbol: { char: "á" } }
+        - action: { symbol: { char: "ǎ" } }
+        - action: { symbol: { char: "à" } }
+    - action: { symbol: { char: "b" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "?" } }
+      callout:
+        - action: { symbol: { char: "B" } }
+        - action: { symbol: { char: "?" } }
         - action: { symbol: { char: "b" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "?" } }
-          callout:
-            - action: { symbol: { char: "B" } }
-            - action: { symbol: { char: "?" } }
-            - action: { symbol: { char: "b" } }
+    - action: { symbol: { char: "c" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "=" } }
+        - direction: down
+          action: { symbol: { char: "+" } }
+      callout:
+        - action: { symbol: { char: "C" } }
+        - action: { symbol: { char: "=" } }
+        - action: { symbol: { char: "+" } }
         - action: { symbol: { char: "c" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "=" } }
-            - direction: down
-              action: { symbol: { char: "+" } }
-          callout:
-            - action: { symbol: { char: "C" } }
-            - action: { symbol: { char: "=" } }
-            - action: { symbol: { char: "+" } }
-            - action: { symbol: { char: "c" } }
-            - action: { shortcutCommand: "#复制" }
-              label: "复制"
+        - action: { shortcutCommand: "#复制" }
+          label: "复制"
+    - action: { symbol: { char: "d" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: ":" } }
+      callout:
+        - action: { symbol: { char: "D" } }
+        - action: { symbol: { char: ":" } }
         - action: { symbol: { char: "d" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: ":" } }
-          callout:
-            - action: { symbol: { char: "D" } }
-            - action: { symbol: { char: ":" } }
-            - action: { symbol: { char: "d" } }
+    - action: { symbol: { char: "e" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "3" } }
+        - direction: down
+          action: { symbol: { char: "#" } }
+      callout:
+        - action: { symbol: { char: "E" } }
+        - action: { symbol: { char: "#" } }
+        - action: { symbol: { char: "3" } }
         - action: { symbol: { char: "e" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "3" } }
-            - direction: down
-              action: { symbol: { char: "#" } }
-          callout:
-            - action: { symbol: { char: "E" } }
-            - action: { symbol: { char: "#" } }
-            - action: { symbol: { char: "3" } }
-            - action: { symbol: { char: "e" } }
-            - action: { symbol: { char: "ē" } }
-            - action: { symbol: { char: "é" } }
-            - action: { symbol: { char: "ě" } }
-            - action: { symbol: { char: "è" } }
+        - action: { symbol: { char: "ē" } }
+        - action: { symbol: { char: "é" } }
+        - action: { symbol: { char: "ě" } }
+        - action: { symbol: { char: "è" } }
+    - action: { symbol: { char: "f" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: ";" } }
+      callout:
+        - action: { symbol: { char: "F" } }
+        - action: { symbol: { char: ";" } }
         - action: { symbol: { char: "f" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: ";" } }
-          callout:
-            - action: { symbol: { char: "F" } }
-            - action: { symbol: { char: ";" } }
-            - action: { symbol: { char: "f" } }
+    - action: { symbol: { char: "g" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "<" } }
+        - direction: down
+          action: { symbol: { char: ">" } }
+      callout:
+        - action: { symbol: { char: "G" } }
+        - action: { symbol: { char: "<" } }
+        - action: { symbol: { char: ">" } }
         - action: { symbol: { char: "g" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "<" } }
-            - direction: down
-              action: { symbol: { char: ">" } }
-          callout:
-            - action: { symbol: { char: "G" } }
-            - action: { symbol: { char: "<" } }
-            - action: { symbol: { char: ">" } }
-            - action: { symbol: { char: "g" } }
+    - action: { symbol: { char: "h" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "(" } }
+        - direction: down
+          action: { symbol: { char: ")" } }
+      callout:
+        - action: { symbol: { char: "H" } }
+        - action: { symbol: { char: "(" } }
+        - action: { symbol: { char: ")" } }
         - action: { symbol: { char: "h" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "(" } }
-            - direction: down
-              action: { symbol: { char: ")" } }
-          callout:
-            - action: { symbol: { char: "H" } }
-            - action: { symbol: { char: "(" } }
-            - action: { symbol: { char: ")" } }
-            - action: { symbol: { char: "h" } }
+    - action: { symbol: { char: "i" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "8" } }
+        - direction: down
+          action: { symbol: { char: "*" } }
+      callout:
+        - action: { symbol: { char: "I" } }
+        - action: { symbol: { char: "*" } }
+        - action: { symbol: { char: "8" } }
         - action: { symbol: { char: "i" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "8" } }
-            - direction: down
-              action: { symbol: { char: "*" } }
-          callout:
-            - action: { symbol: { char: "I" } }
-            - action: { symbol: { char: "*" } }
-            - action: { symbol: { char: "8" } }
-            - action: { symbol: { char: "i" } }
-            - action: { symbol: { char: "ī" } }
-            - action: { symbol: { char: "í" } }
-            - action: { symbol: { char: "ǐ" } }
-            - action: { symbol: { char: "ì" } }
+        - action: { symbol: { char: "ī" } }
+        - action: { symbol: { char: "í" } }
+        - action: { symbol: { char: "ǐ" } }
+        - action: { symbol: { char: "ì" } }
+    - action: { symbol: { char: "j" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "[" } }
+        - direction: down
+          action: { symbol: { char: "]" } }
+      callout:
+        - action: { symbol: { char: "J" } }
+        - action: { symbol: { char: "[" } }
+        - action: { symbol: { char: "]" } }
         - action: { symbol: { char: "j" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "[" } }
-            - direction: down
-              action: { symbol: { char: "]" } }
-          callout:
-            - action: { symbol: { char: "J" } }
-            - action: { symbol: { char: "[" } }
-            - action: { symbol: { char: "]" } }
-            - action: { symbol: { char: "j" } }
+    - action: { symbol: { char: "k" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: '"' } }
+      callout:
+        - action: { symbol: { char: "K" } }
+        - action: { symbol: { char: '"' } }
         - action: { symbol: { char: "k" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: '"' } }
-          callout:
-            - action: { symbol: { char: "K" } }
-            - action: { symbol: { char: '"' } }
-            - action: { symbol: { char: "k" } }
+    - action: { symbol: { char: "l" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "'" } }
+      callout:
+        - action: { symbol: { char: "L" } }
+        - action: { symbol: { char: "'" } }
         - action: { symbol: { char: "l" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "'" } }
-          callout:
-            - action: { symbol: { char: "L" } }
-            - action: { symbol: { char: "'" } }
-            - action: { symbol: { char: "l" } }
+    - action: { symbol: { char: "m" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "{" } }
+        - direction: down
+          action: { symbol: { char: "}" } }
+      callout:
+        - action: { symbol: { char: "M" } }
+        - action: { symbol: { char: "{" } }
+        - action: { symbol: { char: "}" } }
         - action: { symbol: { char: "m" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "{" } }
-            - direction: down
-              action: { symbol: { char: "}" } }
-          callout:
-            - action: { symbol: { char: "M" } }
-            - action: { symbol: { char: "{" } }
-            - action: { symbol: { char: "}" } }
-            - action: { symbol: { char: "m" } }
+    - action: { symbol: { char: "n" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "!" } }
+      callout:
+        - action: { symbol: { char: "N" } }
+        - action: { symbol: { char: "!" } }
         - action: { symbol: { char: "n" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "!" } }
-          callout:
-            - action: { symbol: { char: "N" } }
-            - action: { symbol: { char: "!" } }
-            - action: { symbol: { char: "n" } }
+    - action: { symbol: { char: "o" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "9" } }
+        - direction: down
+          action: { symbol: { char: "(" } }
+      callout:
+        - action: { symbol: { char: "O" } }
+        - action: { symbol: { char: "(" } }
+        - action: { symbol: { char: "9" } }
         - action: { symbol: { char: "o" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "9" } }
-            - direction: down
-              action: { symbol: { char: "(" } }
-          callout:
-            - action: { symbol: { char: "O" } }
-            - action: { symbol: { char: "(" } }
-            - action: { symbol: { char: "9" } }
-            - action: { symbol: { char: "o" } }
-            - action: { symbol: { char: "ō" } }
-            - action: { symbol: { char: "ó" } }
-            - action: { symbol: { char: "ǒ" } }
-            - action: { symbol: { char: "ò" } }
+        - action: { symbol: { char: "ō" } }
+        - action: { symbol: { char: "ó" } }
+        - action: { symbol: { char: "ǒ" } }
+        - action: { symbol: { char: "ò" } }
+    - action: { symbol: { char: "p" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "0" } }
+        - direction: down
+          action: { symbol: { char: ")" } }
+      callout:
+        - action: { symbol: { char: "P" } }
+        - action: { symbol: { char: ")" } }
+        - action: { symbol: { char: "0" } }
         - action: { symbol: { char: "p" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "0" } }
-            - direction: down
-              action: { symbol: { char: ")" } }
-          callout:
-            - action: { symbol: { char: "P" } }
-            - action: { symbol: { char: ")" } }
-            - action: { symbol: { char: "0" } }
-            - action: { symbol: { char: "p" } }
+    - action: { symbol: { char: "q" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "1" } }
+        - direction: down
+          action: { symbol: { char: "!" } }
+      callout:
+        - action: { symbol: { char: "Q" } }
+        - action: { symbol: { char: "!" } }
+        - action: { symbol: { char: "1" } }
         - action: { symbol: { char: "q" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "1" } }
-            - direction: down
-              action: { symbol: { char: "!" } }
-          callout:
-            - action: { symbol: { char: "Q" } }
-            - action: { symbol: { char: "!" } }
-            - action: { symbol: { char: "1" } }
-            - action: { symbol: { char: "q" } }
+    - action: { symbol: { char: "r" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "4" } }
+        - direction: down
+          action: { symbol: { char: "$" } }
+      callout:
+        - action: { symbol: { char: "R" } }
+        - action: { symbol: { char: "$" } }
+        - action: { symbol: { char: "4" } }
         - action: { symbol: { char: "r" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "4" } }
-            - direction: down
-              action: { symbol: { char: "$" } }
-          callout:
-            - action: { symbol: { char: "R" } }
-            - action: { symbol: { char: "$" } }
-            - action: { symbol: { char: "4" } }
-            - action: { symbol: { char: "r" } }
+    - action: { symbol: { char: "s" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "/" } }
+      callout:
+        - action: { symbol: { char: "S" } }
+        - action: { symbol: { char: "/" } }
         - action: { symbol: { char: "s" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "/" } }
-          callout:
-            - action: { symbol: { char: "S" } }
-            - action: { symbol: { char: "/" } }
-            - action: { symbol: { char: "s" } }
+    - action: { symbol: { char: "t" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "5" } }
+        - direction: down
+          action: { symbol: { char: "%" } }
+      callout:
+        - action: { symbol: { char: "T" } }
+        - action: { symbol: { char: "%" } }
+        - action: { symbol: { char: "5" } }
         - action: { symbol: { char: "t" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "5" } }
-            - direction: down
-              action: { symbol: { char: "%" } }
-          callout:
-            - action: { symbol: { char: "T" } }
-            - action: { symbol: { char: "%" } }
-            - action: { symbol: { char: "5" } }
-            - action: { symbol: { char: "t" } }
+    - action: { symbol: { char: "u" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "7" } }
+        - direction: down
+          action: { symbol: { char: "&" } }
+      callout:
+        - action: { symbol: { char: "U" } }
+        - action: { symbol: { char: "&" } }
+        - action: { symbol: { char: "7" } }
         - action: { symbol: { char: "u" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "7" } }
-            - direction: down
-              action: { symbol: { char: "&" } }
-          callout:
-            - action: { symbol: { char: "U" } }
-            - action: { symbol: { char: "&" } }
-            - action: { symbol: { char: "7" } }
-            - action: { symbol: { char: "u" } }
-            - action: { symbol: { char: "ū" } }
-            - action: { symbol: { char: "ú" } }
-            - action: { symbol: { char: "ǔ" } }
-            - action: { symbol: { char: "ù" } }
+        - action: { symbol: { char: "ū" } }
+        - action: { symbol: { char: "ú" } }
+        - action: { symbol: { char: "ǔ" } }
+        - action: { symbol: { char: "ù" } }
+    - action: { symbol: { char: "v" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "\\" } }
+        - direction: down
+          action: { symbol: { char: "|" } }
+      callout:
+        - action: { symbol: { char: "V" } }
+        - action: { symbol: { char: "\\" } }
+        - action: { symbol: { char: "|" } }
         - action: { symbol: { char: "v" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "\\" } }
-            - direction: down
-              action: { symbol: { char: "|" } }
-          callout:
-            - action: { symbol: { char: "V" } }
-            - action: { symbol: { char: "\\" } }
-            - action: { symbol: { char: "|" } }
-            - action: { symbol: { char: "v" } }
-            - action: { shortcutCommand: "#粘贴" }
-              label: "粘贴"
-            - action: { symbol: { char: "ü" } }
-            - action: { symbol: { char: "ǖ" } }
-            - action: { symbol: { char: "ǘ" } }
-            - action: { symbol: { char: "ǚ" } }
-            - action: { symbol: { char: "ǜ" } }
+        - action: { shortcutCommand: "#粘贴" }
+          label: "粘贴"
+        - action: { symbol: { char: "ü" } }
+        - action: { symbol: { char: "ǖ" } }
+        - action: { symbol: { char: "ǘ" } }
+        - action: { symbol: { char: "ǚ" } }
+        - action: { symbol: { char: "ǜ" } }
+    - action: { symbol: { char: "w" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "2" } }
+        - direction: down
+          action: { symbol: { char: "@" } }
+      callout:
+        - action: { symbol: { char: "W" } }
+        - action: { symbol: { char: "@" } }
+        - action: { symbol: { char: "2" } }
         - action: { symbol: { char: "w" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "2" } }
-            - direction: down
-              action: { symbol: { char: "@" } }
-          callout:
-            - action: { symbol: { char: "W" } }
-            - action: { symbol: { char: "@" } }
-            - action: { symbol: { char: "2" } }
-            - action: { symbol: { char: "w" } }
+    - action: { symbol: { char: "x" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "_" } }
+      callout:
+        - action: { symbol: { char: "X" } }
+        - action: { symbol: { char: "_" } }
         - action: { symbol: { char: "x" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "_" } }
-          callout:
-            - action: { symbol: { char: "X" } }
-            - action: { symbol: { char: "_" } }
-            - action: { symbol: { char: "x" } }
-            - action: { shortcutCommand: "#剪切" }
-              label: "剪切"
+        - action: { shortcutCommand: "#剪切" }
+          label: "剪切"
+    - action: { symbol: { char: "y" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "6" } }
+        - direction: down
+          action: { symbol: { char: "^" } }
+      callout:
+        - action: { symbol: { char: "Y" } }
+        - action: { symbol: { char: "^" } }
+        - action: { symbol: { char: "6" } }
         - action: { symbol: { char: "y" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "6" } }
-            - direction: down
-              action: { symbol: { char: "^" } }
-          callout:
-            - action: { symbol: { char: "Y" } }
-            - action: { symbol: { char: "^" } }
-            - action: { symbol: { char: "6" } }
-            - action: { symbol: { char: "y" } }
+    - action: { symbol: { char: "z" } }
+      swipe:
+        - direction: up
+          action: { symbol: { char: "-" } }
+      callout:
+        - action: { symbol: { char: "Z" } }
+        - action: { symbol: { char: "-" } }
         - action: { symbol: { char: "z" } }
-          swipe:
-            - direction: up
-              action: { symbol: { char: "-" } }
-          callout:
-            - action: { symbol: { char: "Z" } }
-            - action: { symbol: { char: "-" } }
-            - action: { symbol: { char: "z" } }
-            - action: { shortcutCommand: "#撤销" }
-              label: "撤销"
-            - action: { shortcutCommand: "#重做" }
-              label: "重做"
-        - action: enter
-          swipe:
-            - direction: up
-              action: { shortcutCommand: "#换行" }
-              label: "↵"
-          callout:
-            - action: { shortcutCommand: "#换行" }
-              label: "换行"
+        - action: { shortcutCommand: "#撤销" }
+          label: "撤销"
+        - action: { shortcutCommand: "#重做" }
+          label: "重做"
+    - action: enter
+      swipe:
+        - direction: up
+          action: { shortcutCommand: "#换行" }
+          label: "↵"
+      callout:
+        - action: { shortcutCommand: "#换行" }
+          label: "换行"
