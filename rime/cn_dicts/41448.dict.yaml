@@ -17,7 +17,7 @@
 #          这样小字表里存在的字按权重靠前排列，大字表殿后，生僻字自动就排在末尾。
 ---
 name: 41448
-version: "2025-04-23"
+version: "2025-05-10"
 sort: by_weight
 ...
 # 注释掉了一些
@@ -17904,6 +17904,7 @@ sort: by_weight
 萿	kuo
 葀	kuo
 蛞	kuo
+适	kuo
 銛	kuo
 銽	kuo
 铦	kuo
@@ -25118,6 +25119,7 @@ sort: by_weight
 𪌈	pi
 𪖞	pi
 𪛎	pi
+𱇒	pi
 㓲	pian
 㛹	pian
 㸤	pian
@@ -36078,6 +36080,7 @@ sort: by_weight
 𪄏	xian
 𪄷	xian
 𪔩	xian
+𬖑	xian
 𮬣	xian
 㗽	xiang
 㟄	xiang
@@ -37499,6 +37502,7 @@ sort: by_weight
 䀏	xuan
 䁔	xuan
 䁢	xuan
+䃠	xuan
 䍗	xuan
 䍻	xuan
 䗠	xuan

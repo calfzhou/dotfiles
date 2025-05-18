@@ -627,7 +627,6 @@ Apple Pay	ApplePay
 iTunes Store	iTunesStore
 AMD	AMD
 AMDgpu	AMDgpu
-Amphetamine	Amphetamine
 App Store	AppStore
 AirDrop	AirDrop
 Alfred	Alfred
@@ -873,7 +872,7 @@ VPN	VPN
 virtual private network	VPN
 watchOS	watchOS
 Wi-Fi	Wi-Fi
-WiFi	WiFi
+# WiFi	WiFi
 Widget	Widget
 WiFi Explorer	WiFiExplorer
 WiFi Scanner	WiFiScanner
