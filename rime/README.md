@@ -2,13 +2,40 @@
 
 [RIME | 中州韻輸入法引擎](https://rime.im/)
 
-## macOS: Squirrel
+[Rime 中州韵输入法引擎 - GoCalf](https://gocalf.com/notes/rime.html)
+
+## Installation
+
+### macOS: Squirrel
 
 [rime/squirrel: 【鼠鬚管】Rime for macOS](https://github.com/rime/squirrel)
 
 ``` bash
 ln -s $DOTFILES_HOME/rime ~/Library/Rime
 ```
+
+## Upgrade
+
+### Sync from Upstream
+
+``` bash
+cd ~/plum
+bash rime-install iDvel/rime-ice:others/recipes/full
+```
+
+Review changes and merge carefully. Especially:
+
+``` text
+opencc/emoji.txt
+```
+
+### macOS: Squirrel
+
+在 Installation 的时候已经配置好了，sync from upstream 后，直接在「鼠须管」的菜单中选择「重新部署」即可。
+
+### iOS: Hamster
+
+通过电脑在 iCloud 里 Hamster 目录（路径是 ~/Library/Mobile Documents/iCloud~dev~fuxiao~app~hamsterapp/Documents）里的 RIME/Rime 子目录中放置所有的配置文件（可以从 GitHub 仓库直接复制过来），然后在 Hamster 里操作「RIME 部署」。
 
 ## 主用的输入方案
 
