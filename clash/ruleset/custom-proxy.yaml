@@ -8,6 +8,8 @@ payload:
   - DOMAIN-SUFFIX,discourse-cdn.com
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,hledger.org
+  - DOMAIN,gocalf.com # it's on GitHub
+  - DOMAIN,blog.gocalf.com # it's on GitHub
   - DOMAIN-SUFFIX,loli.net # CDN of sm.ms
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,singlelogin.me # z-lib
