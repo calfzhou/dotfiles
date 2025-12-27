@@ -77,6 +77,9 @@ export NVM_AUTO_USE=true;
 export PYENV_ROOT="$HOME/.pyenv"
 if command -v pyenv &>/dev/null; then
     eval "$(pyenv init --path)"
+
+    # The commit https://github.com/ohmyzsh/ohmyzsh/commit/5c532a85cf7c4f1d5bf6b9fd35e964b4545c8de3 caused pyenv not loading in some cases.
+    unset VIRTUAL_ENV
 fi
 
 # Which plugins would you like to load?
@@ -104,3 +107,10 @@ if type brew &>/dev/null; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
