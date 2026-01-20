@@ -20,6 +20,7 @@ ln -s $DOTFILES_HOME/rime ~/Library/Rime
 
 ``` bash
 cd ~/plum
+git pull
 bash rime-install iDvel/rime-ice:others/recipes/full
 ```
 
