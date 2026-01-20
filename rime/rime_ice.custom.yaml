@@ -5,3 +5,5 @@ patch:
     - lua_filter@*cn_en_spacer # 为中英混输词条（cn_en.dict.yaml）自动空格
 
   'translator/dictionary': rime_ice.custom
+
+  'emoji/opencc_config': emoji_custom.json

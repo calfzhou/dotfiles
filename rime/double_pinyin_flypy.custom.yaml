@@ -8,7 +8,6 @@ patch:
   # [双拼模式下怎么能不让输入框的拼音自动展开成全拼？](https://github.com/rime/squirrel/issues/261)
   'translator/preedit_format': []
 
-  # 'emoji/opencc_config': emoji_custom # This patch doesn't work
+  'emoji/opencc_config': emoji_custom.json
 
-  'punctuator/symbols/+':
-    - 'Vvv': [👌, 👍, 😂, 😅, 😡, 😮, 😱, 😭, 😘, 😰, 💩]
+  'punctuator/symbols/Vvv': [👌, 👍, 😂, 😅, 😡, 😮, 😱, 😭, 😘, 😰, 💩]
