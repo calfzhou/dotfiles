@@ -1,0 +1,8 @@
+# 元书输入法应用设置：关于 -> 左上角 ... -> 导入应用设置
+candidateTextFontSize: 18
+hapticFeedbackEnabled: true
+keyHintEnabled: false
+keyboardSkinName: 空山素影-calf
+selectedSchemaID: double_pinyin_flypy_18
+doubleTapSpaceEnable: true
+isEditingPositionAdjustableBySwipe: true
