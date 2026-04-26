@@ -16,6 +16,9 @@
     excludesfile = ~/.gitignore_global
     quotePath = false
 
+[init]
+    defaultBranch = main
+
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
