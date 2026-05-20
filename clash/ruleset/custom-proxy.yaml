@@ -7,10 +7,11 @@ payload:
   - DOMAIN-SUFFIX,cloudflare.com
   - DOMAIN-SUFFIX,discourse-cdn.com
   - DOMAIN-SUFFIX,docker.com
-  - DOMAIN-SUFFIX,hledger.org
   - DOMAIN,gocalf.com # it's on GitHub
   - DOMAIN,blog.gocalf.com # it's on GitHub
+  - DOMAIN-SUFFIX,hledger.org
   - DOMAIN-SUFFIX,loli.net # CDN of sm.ms
+  - DOMAIN-SUFFIX,nand2tetris.org
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,singlelogin.me # z-lib
   - DOMAIN-SUFFIX,tails.net
