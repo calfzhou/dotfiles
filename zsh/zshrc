@@ -89,7 +89,7 @@ fi
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     gnu-utils
-    pyenv # The plugin will load pyenv-virtualenv.
+    # pyenv # The plugin will load pyenv-virtualenv.
     sudo
     # virtualenv
     # virtualenvwrapper

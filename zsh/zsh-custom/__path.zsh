@@ -43,6 +43,16 @@ NVM_DIR="$HOME/.nvm"
 # Git encrypt
 [[ -d "$HOME/tools/git-encrypt" ]] && PATH="$HOME/tools/git-encrypt:$PATH"
 
+# Claude (~/.local)
+[[ -d "$HOME/.local/bin" ]] && PATH="$HOME/.local/bin:$PATH"
+
+# bun completions
+[[ -s "$HOME/.bun/_bun" ]] && source "$HOME/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+PATH="$BUN_INSTALL/bin:$PATH"
+
 # Pyenv
 # export PYENV_ROOT="$HOME/.pyenv"
 # if command -v pyenv &>/dev/null; then
