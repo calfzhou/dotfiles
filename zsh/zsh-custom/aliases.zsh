@@ -131,5 +131,7 @@ alias uuid="uuidgen | tr '[:upper:]' '[:lower:]'"
 # SSH via socks 5 proxy
 alias sshp="ssh -o ProxyCommand='nc -X 5 -x 127.0.0.1:1086 %h %p'"
 
-# Replace `docker` with `podman`.
-command -v docker > /dev/null || alias docker="podman"
+# Replace `docker` with `podman`. Disabled.
+# Instead, enables docker compatibility mode in Podman, then `brew install docker`.
+# https://podman-desktop.io/docs/migrating-from-docker/managing-docker-compatibility
+# command -v docker > /dev/null || alias docker="podman"
