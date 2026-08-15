@@ -15,5 +15,6 @@ payload:
   - DOMAIN-SUFFIX,olelive.com
   - DOMAIN-SUFFIX,singlelogin.me # z-lib
   - DOMAIN-SUFFIX,tails.net
+  - DOMAIN-SUFFIX,typing.com
   - DOMAIN-SUFFIX,vercel.com
   - DOMAIN-SUFFIX,vercel-dns.com
